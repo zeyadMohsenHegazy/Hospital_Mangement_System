@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HospitalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Departments">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Number" Type="int" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Doctors">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Salary" Type="int" Nullable="false" />
+          <Property Name="Specialization" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Patiens">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Gender" Type="varchar" MaxLength="1" />
+          <Property Name="BloodType" Type="char" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="Reservations">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PatientID" Type="int" Nullable="false" />
+          <Property Name="DoctorID" Type="int" Nullable="false" />
+          <Property Name="DepartmentID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="MeetTime" Type="datetime" Nullable="false" />
+          <Property Name="ReservationPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="PaymentMethod" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="role" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK__Reservati__Depar__46E78A0C">
+          <End Role="Departments" Type="Self.Departments" Multiplicity="1" />
+          <End Role="Reservations" Type="Self.Reservations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departments">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Reservations">
+              <PropertyRef Name="DepartmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Reservati__Docto__45F365D3">
+          <End Role="Doctors" Type="Self.Doctors" Multiplicity="1" />
+          <End Role="Reservations" Type="Self.Reservations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctors">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Reservations">
+              <PropertyRef Name="DoctorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Reservati__Patie__44FF419A">
+          <End Role="Patiens" Type="Self.Patiens" Multiplicity="1" />
+          <End Role="Reservations" Type="Self.Reservations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patiens">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Reservations">
+              <PropertyRef Name="PatientID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Reservati__UserI__47DBAE45">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Reservations" Type="Self.Reservations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Reservations">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HospitalModelStoreContainer">
+          <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Doctors" EntityType="Self.Doctors" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Patiens" EntityType="Self.Patiens" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reservations" EntityType="Self.Reservations" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Reservati__Depar__46E78A0C" Association="Self.FK__Reservati__Depar__46E78A0C">
+            <End Role="Departments" EntitySet="Departments" />
+            <End Role="Reservations" EntitySet="Reservations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Reservati__Docto__45F365D3" Association="Self.FK__Reservati__Docto__45F365D3">
+            <End Role="Doctors" EntitySet="Doctors" />
+            <End Role="Reservations" EntitySet="Reservations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Reservati__Patie__44FF419A" Association="Self.FK__Reservati__Patie__44FF419A">
+            <End Role="Patiens" EntitySet="Patiens" />
+            <End Role="Reservations" EntitySet="Reservations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Reservati__UserI__47DBAE45" Association="Self.FK__Reservati__UserI__47DBAE45">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Reservations" EntitySet="Reservations" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HospitalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Number" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Reservations" Relationship="Self.FK__Reservati__Depar__46E78A0C" FromRole="Departments" ToRole="Reservations" />
+        </EntityType>
+        <EntityType Name="Doctor">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Salary" Type="Int32" Nullable="false" />
+          <Property Name="Specialization" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Reservations" Relationship="Self.FK__Reservati__Docto__45F365D3" FromRole="Doctors" ToRole="Reservations" />
+        </EntityType>
+        <EntityType Name="Patien">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Age" Type="Int32" />
+          <Property Name="Gender" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="BloodType" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Reservations" Relationship="Self.FK__Reservati__Patie__44FF419A" FromRole="Patiens" ToRole="Reservations" />
+        </EntityType>
+        <EntityType Name="Reservation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PatientID" Type="Int32" Nullable="false" />
+          <Property Name="DoctorID" Type="Int32" Nullable="false" />
+          <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="MeetTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ReservationPrice" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="PaymentMethod" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Department" Relationship="Self.FK__Reservati__Depar__46E78A0C" FromRole="Reservations" ToRole="Departments" />
+          <NavigationProperty Name="Doctor" Relationship="Self.FK__Reservati__Docto__45F365D3" FromRole="Reservations" ToRole="Doctors" />
+          <NavigationProperty Name="Patien" Relationship="Self.FK__Reservati__Patie__44FF419A" FromRole="Reservations" ToRole="Patiens" />
+          <NavigationProperty Name="User" Relationship="Self.FK__Reservati__UserI__47DBAE45" FromRole="Reservations" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="role" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Reservations" Relationship="Self.FK__Reservati__UserI__47DBAE45" FromRole="Users" ToRole="Reservations" />
+        </EntityType>
+        <Association Name="FK__Reservati__Depar__46E78A0C">
+          <End Role="Departments" Type="Self.Department" Multiplicity="1" />
+          <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departments">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Reservations">
+              <PropertyRef Name="DepartmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Reservati__Docto__45F365D3">
+          <End Role="Doctors" Type="Self.Doctor" Multiplicity="1" />
+          <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctors">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Reservations">
+              <PropertyRef Name="DoctorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Reservati__Patie__44FF419A">
+          <End Role="Patiens" Type="Self.Patien" Multiplicity="1" />
+          <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patiens">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Reservations">
+              <PropertyRef Name="PatientID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Reservati__UserI__47DBAE45">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Reservations">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HospitalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Departments" EntityType="Self.Department" />
+          <EntitySet Name="Doctors" EntityType="Self.Doctor" />
+          <EntitySet Name="Patiens" EntityType="Self.Patien" />
+          <EntitySet Name="Reservations" EntityType="Self.Reservation" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK__Reservati__Depar__46E78A0C" Association="Self.FK__Reservati__Depar__46E78A0C">
+            <End Role="Departments" EntitySet="Departments" />
+            <End Role="Reservations" EntitySet="Reservations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Reservati__Docto__45F365D3" Association="Self.FK__Reservati__Docto__45F365D3">
+            <End Role="Doctors" EntitySet="Doctors" />
+            <End Role="Reservations" EntitySet="Reservations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Reservati__Patie__44FF419A" Association="Self.FK__Reservati__Patie__44FF419A">
+            <End Role="Patiens" EntitySet="Patiens" />
+            <End Role="Reservations" EntitySet="Reservations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Reservati__UserI__47DBAE45" Association="Self.FK__Reservati__UserI__47DBAE45">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Reservations" EntitySet="Reservations" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HospitalModelStoreContainer" CdmEntityContainer="HospitalEntities">
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="HospitalModel.Department">
+              <MappingFragment StoreEntitySet="Departments">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Doctors">
+            <EntityTypeMapping TypeName="HospitalModel.Doctor">
+              <MappingFragment StoreEntitySet="Doctors">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="Specialization" ColumnName="Specialization" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Patiens">
+            <EntityTypeMapping TypeName="HospitalModel.Patien">
+              <MappingFragment StoreEntitySet="Patiens">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="BloodType" ColumnName="BloodType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reservations">
+            <EntityTypeMapping TypeName="HospitalModel.Reservation">
+              <MappingFragment StoreEntitySet="Reservations">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PatientID" ColumnName="PatientID" />
+                <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="MeetTime" ColumnName="MeetTime" />
+                <ScalarProperty Name="ReservationPrice" ColumnName="ReservationPrice" />
+                <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="HospitalModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="role" ColumnName="role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

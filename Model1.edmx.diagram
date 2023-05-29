@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ab6cdeebbaf543bca91675a7e4c370fa" Name="Diagram1" ZoomLevel="80">
+        <EntityTypeShape EntityType="HospitalModel.Department" Width="1.5" PointX="0.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalModel.Doctor" Width="1.5" PointX="5.125" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalModel.Patien" Width="1.5" PointX="0.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalModel.Reservation" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalModel.User" Width="1.5" PointX="5.125" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="HospitalModel.FK__Reservati__Depar__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalModel.FK__Reservati__Docto__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalModel.FK__Reservati__Patie__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="HospitalModel.FK__Reservati__UserI__47DBAE45" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
