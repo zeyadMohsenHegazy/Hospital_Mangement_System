@@ -17,13 +17,12 @@ namespace HospitalMangementSystem
         {
             InitializeComponent();
         }
-        private async void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             HospitalEntities hospitalEntities = new HospitalEntities();
             var users = hospitalEntities.Users;
             string User = UserName.Text;
             string Pass = Password.Text;
-            bool isUserLoggedIn = false;
             foreach (var user in users)
             {
                 if (user.UserName == User && user.Password == Pass)
@@ -31,18 +30,15 @@ namespace HospitalMangementSystem
                     MessageBox.Show("Logged");
                     UserName.Text = String.Empty;
                     Password.Text = String.Empty;
-                    isUserLoggedIn = true;
-                    break;
+                }
+                else if (user.UserName != User || user.Password != Pass)
+                {
+                    LogcheckTxt.Text = "The user name or password is wrong";
+                    LogcheckTxt.Visible = true;
+                    UserName.Text = String.Empty;
+                    Password.Text = String.Empty;
                 }
             }
-            if (!isUserLoggedIn)
-            {
-                LogcheckTxt.Text = "The user name or password is wrong";
-                LogcheckTxt.Visible = true;
-                UserName.Text = String.Empty;
-                Password.Text = String.Empty;
-            }
-            await Task.CompletedTask;
         }
 
         private void UserName_TextChanged(object sender, EventArgs e)
