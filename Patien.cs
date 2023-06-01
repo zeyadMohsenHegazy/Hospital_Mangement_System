@@ -25,6 +25,8 @@ namespace HospitalMangementSystem
         public Nullable<int> Age { get; set; }
         public string Gender { get; set; }
         public string BloodType { get; set; }
+        public string phone { get; set; }
+        public string email { get; set; }
     
         public virtual ICollection<Reservation> Reservations { get; set; }
     }

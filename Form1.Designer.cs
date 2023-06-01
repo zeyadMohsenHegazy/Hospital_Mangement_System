@@ -33,7 +33,6 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -42,13 +41,14 @@
             this.LogcheckTxt = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.Password = new Guna.UI2.WinForms.Guna2TextBox();
-            this.UserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PasswordTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.UserNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -57,8 +57,9 @@
             // 
             // guna2DragControl1
             // 
+            this.guna2DragControl1.DockForm = true;
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this;
+            this.guna2DragControl1.TargetControl = this.guna2PictureBox2;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // guna2PictureBox2
@@ -73,19 +74,6 @@
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::HospitalMangementSystem.Properties.Resources.LOGO;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(53, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(179, 171);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // guna2Panel1
             // 
@@ -126,8 +114,8 @@
             this.guna2Panel2.Controls.Add(this.LogcheckTxt);
             this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.Controls.Add(this.guna2ToggleSwitch1);
-            this.guna2Panel2.Controls.Add(this.Password);
-            this.guna2Panel2.Controls.Add(this.UserName);
+            this.guna2Panel2.Controls.Add(this.PasswordTxt);
+            this.guna2Panel2.Controls.Add(this.UserNameTxt);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
@@ -198,52 +186,65 @@
             this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.Teal;
             this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.Teal;
             // 
-            // Password
+            // PasswordTxt
             // 
-            this.Password.Animated = true;
-            this.Password.BorderColor = System.Drawing.Color.Teal;
-            this.Password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Password.DefaultText = "";
-            this.Password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Password.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.Password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Password.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Password.Location = new System.Drawing.Point(28, 216);
-            this.Password.Name = "Password";
-            this.Password.PasswordChar = '●';
-            this.Password.PlaceholderText = "Password";
-            this.Password.SelectedText = "";
-            this.Password.Size = new System.Drawing.Size(221, 36);
-            this.Password.TabIndex = 2;
-            this.Password.UseSystemPasswordChar = true;
+            this.PasswordTxt.Animated = true;
+            this.PasswordTxt.BorderColor = System.Drawing.Color.Teal;
+            this.PasswordTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTxt.DefaultText = "";
+            this.PasswordTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTxt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.PasswordTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTxt.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.PasswordTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTxt.Location = new System.Drawing.Point(28, 216);
+            this.PasswordTxt.Name = "PasswordTxt";
+            this.PasswordTxt.PasswordChar = '●';
+            this.PasswordTxt.PlaceholderText = "Password";
+            this.PasswordTxt.SelectedText = "";
+            this.PasswordTxt.Size = new System.Drawing.Size(221, 36);
+            this.PasswordTxt.TabIndex = 2;
+            this.PasswordTxt.UseSystemPasswordChar = true;
             // 
-            // UserName
+            // UserNameTxt
             // 
-            this.UserName.Animated = true;
-            this.UserName.BorderColor = System.Drawing.Color.Teal;
-            this.UserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.UserName.DefaultText = "";
-            this.UserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.UserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.UserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.UserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.UserName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.UserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UserName.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.UserName.ForeColor = System.Drawing.Color.Transparent;
-            this.UserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UserName.Location = new System.Drawing.Point(28, 161);
-            this.UserName.Name = "UserName";
-            this.UserName.PasswordChar = '\0';
-            this.UserName.PlaceholderText = "User Name";
-            this.UserName.SelectedText = "";
-            this.UserName.Size = new System.Drawing.Size(221, 36);
-            this.UserName.TabIndex = 1;
-            this.UserName.TextChanged += new System.EventHandler(this.UserName_TextChanged);
+            this.UserNameTxt.Animated = true;
+            this.UserNameTxt.BorderColor = System.Drawing.Color.Teal;
+            this.UserNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UserNameTxt.DefaultText = "";
+            this.UserNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.UserNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.UserNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.UserNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.UserNameTxt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.UserNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.UserNameTxt.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.UserNameTxt.ForeColor = System.Drawing.Color.Transparent;
+            this.UserNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.UserNameTxt.Location = new System.Drawing.Point(28, 161);
+            this.UserNameTxt.Name = "UserNameTxt";
+            this.UserNameTxt.PasswordChar = '\0';
+            this.UserNameTxt.PlaceholderText = "User Name";
+            this.UserNameTxt.SelectedText = "";
+            this.UserNameTxt.Size = new System.Drawing.Size(221, 36);
+            this.UserNameTxt.TabIndex = 1;
+            this.UserNameTxt.TextChanged += new System.EventHandler(this.UserName_TextChanged);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::HospitalMangementSystem.Properties.Resources.LOGO;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(53, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(179, 171);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // guna2ShadowForm1
             // 
@@ -259,14 +260,15 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HELP!";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -279,8 +281,8 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox UserName;
-        private Guna.UI2.WinForms.Guna2TextBox Password;
+        private Guna.UI2.WinForms.Guna2TextBox UserNameTxt;
+        private Guna.UI2.WinForms.Guna2TextBox PasswordTxt;
         private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label LogcheckTxt;

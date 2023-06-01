@@ -8,8 +8,8 @@
         <EntityTypeShape EntityType="HospitalModel.Department" Width="1.5" PointX="0.5" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="HospitalModel.Doctor" Width="1.5" PointX="5.125" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="HospitalModel.Patien" Width="1.5" PointX="0.5" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HospitalModel.Reservation" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="HospitalModel.User" Width="1.5" PointX="5.125" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalModel.Reservation" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HospitalModel.User" Width="1.5" PointX="5.125" PointY="3.75" IsExpanded="true" />
         <AssociationConnector Association="HospitalModel.FK__Reservati__Depar__46E78A0C" ManuallyRouted="false" />
         <AssociationConnector Association="HospitalModel.FK__Reservati__Docto__45F365D3" ManuallyRouted="false" />
         <AssociationConnector Association="HospitalModel.FK__Reservati__Patie__44FF419A" ManuallyRouted="false" />
