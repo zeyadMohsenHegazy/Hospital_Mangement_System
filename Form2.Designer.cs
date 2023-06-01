@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.PanelMovable = new Guna.UI2.WinForms.Guna2Panel();
             this.DashBoardBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -53,7 +54,7 @@
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -79,7 +80,7 @@
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(224, 574);
+            this.panel1.Size = new System.Drawing.Size(224, 602);
             this.panel1.TabIndex = 0;
             // 
             // PanelMovable
@@ -235,7 +236,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(224, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(778, 103);
+            this.guna2Panel1.Size = new System.Drawing.Size(847, 103);
             this.guna2Panel1.TabIndex = 1;
             // 
             // UserNameLabel
@@ -296,7 +297,7 @@
             this.TopRightPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopRightPanel.Location = new System.Drawing.Point(0, 0);
             this.TopRightPanel.Name = "TopRightPanel";
-            this.TopRightPanel.Size = new System.Drawing.Size(778, 42);
+            this.TopRightPanel.Size = new System.Drawing.Size(847, 42);
             this.TopRightPanel.TabIndex = 0;
             // 
             // TimeNow
@@ -316,7 +317,7 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(704, 12);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(773, 12);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(28, 24);
             this.guna2ControlBox2.TabIndex = 4;
@@ -327,7 +328,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(738, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(807, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(28, 24);
             this.guna2ControlBox1.TabIndex = 3;
@@ -354,9 +355,9 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(224, 539);
+            this.guna2Panel2.Location = new System.Drawing.Point(224, 567);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(778, 35);
+            this.guna2Panel2.Size = new System.Drawing.Size(847, 35);
             this.guna2Panel2.TabIndex = 2;
             // 
             // guna2HtmlLabel2
@@ -370,13 +371,13 @@
             this.guna2HtmlLabel2.TabIndex = 4;
             this.guna2HtmlLabel2.Text = "Project Supervisor: Eng/Mrihan Mohamed";
             // 
-            // guna2Panel4
+            // MainPanel
             // 
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel4.Location = new System.Drawing.Point(224, 103);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(778, 436);
-            this.guna2Panel4.TabIndex = 3;
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(224, 103);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(847, 464);
+            this.MainPanel.TabIndex = 3;
             // 
             // timer1
             // 
@@ -386,12 +387,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 574);
-            this.Controls.Add(this.guna2Panel4);
+            this.ClientSize = new System.Drawing.Size(1071, 602);
+            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
@@ -435,7 +437,7 @@
         private Guna.UI2.WinForms.Guna2Button ReservationBtn;
         private Guna.UI2.WinForms.Guna2Button SettingsBtn;
         private Guna.UI2.WinForms.Guna2Panel PanelMovable;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel MainPanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel TimeNow;
         private System.Windows.Forms.Timer timer1;
     }

@@ -40,7 +40,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.LogcheckTxt = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.ShowPasswordTxt = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.PasswordTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.UserNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -113,7 +113,7 @@
             this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Controls.Add(this.LogcheckTxt);
             this.guna2Panel2.Controls.Add(this.label1);
-            this.guna2Panel2.Controls.Add(this.guna2ToggleSwitch1);
+            this.guna2Panel2.Controls.Add(this.ShowPasswordTxt);
             this.guna2Panel2.Controls.Add(this.PasswordTxt);
             this.guna2Panel2.Controls.Add(this.UserNameTxt);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
@@ -164,27 +164,28 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(66, 275);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Remember me";
+            this.label1.Text = "show password";
             // 
-            // guna2ToggleSwitch1
+            // ShowPasswordTxt
             // 
-            this.guna2ToggleSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ToggleSwitch1.Checked = true;
-            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(28, 268);
-            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(35, 20);
-            this.guna2ToggleSwitch1.TabIndex = 3;
-            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.Teal;
-            this.guna2ToggleSwitch1.UncheckedState.BorderThickness = 2;
-            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.Teal;
-            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.Teal;
+            this.ShowPasswordTxt.BackColor = System.Drawing.Color.Transparent;
+            this.ShowPasswordTxt.Checked = true;
+            this.ShowPasswordTxt.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ShowPasswordTxt.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ShowPasswordTxt.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ShowPasswordTxt.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.ShowPasswordTxt.Location = new System.Drawing.Point(28, 268);
+            this.ShowPasswordTxt.Name = "ShowPasswordTxt";
+            this.ShowPasswordTxt.Size = new System.Drawing.Size(35, 20);
+            this.ShowPasswordTxt.TabIndex = 3;
+            this.ShowPasswordTxt.UncheckedState.BorderColor = System.Drawing.Color.Teal;
+            this.ShowPasswordTxt.UncheckedState.BorderThickness = 2;
+            this.ShowPasswordTxt.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ShowPasswordTxt.UncheckedState.InnerBorderColor = System.Drawing.Color.Teal;
+            this.ShowPasswordTxt.UncheckedState.InnerColor = System.Drawing.Color.Teal;
+            this.ShowPasswordTxt.CheckedChanged += new System.EventHandler(this.ShowPasswordTxt_CheckedChanged);
             // 
             // PasswordTxt
             // 
@@ -202,12 +203,12 @@
             this.PasswordTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTxt.Location = new System.Drawing.Point(28, 216);
             this.PasswordTxt.Name = "PasswordTxt";
-            this.PasswordTxt.PasswordChar = '●';
+            this.PasswordTxt.PasswordChar = '\0';
             this.PasswordTxt.PlaceholderText = "Password";
             this.PasswordTxt.SelectedText = "";
             this.PasswordTxt.Size = new System.Drawing.Size(221, 36);
             this.PasswordTxt.TabIndex = 2;
-            this.PasswordTxt.UseSystemPasswordChar = true;
+            this.PasswordTxt.TextChanged += new System.EventHandler(this.PasswordTxt_TextChanged);
             // 
             // UserNameTxt
             // 
@@ -283,7 +284,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox UserNameTxt;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTxt;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch ShowPasswordTxt;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label LogcheckTxt;
         private System.Windows.Forms.Label label1;

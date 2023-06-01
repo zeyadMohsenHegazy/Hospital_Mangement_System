@@ -42,25 +42,6 @@ namespace HospitalMangementSystem
                 UserNameTxt.Text = String.Empty;
                 PasswordTxt.Text = String.Empty;
             }
-            
-            //foreach (var user in hospitalEntities.Users)
-            //{
-            //    if (user.UserName == UserNameTxt.Text && user.Password == PasswordTxt.Text)
-            //    {
-            //        
-            //        mainform.UserName = user.UserName;
-            //        mainform.Role = user.role;
-            //        UserNameTxt.Text = "";
-            //        PasswordTxt.Text = "";
-            //    }
-            //    else if (user.UserName != UserNameTxt.Text || user.Password != PasswordTxt.Text)
-            //    {
-            //        LogcheckTxt.Text = "The user name or password is wrong";
-            //        LogcheckTxt.Visible = true;
-            //        this.UserNameTxt.Text = "";
-            //        PasswordTxt.Text = "";
-            //    }
-            //}
         }
 
         private void UserName_TextChanged(object sender, EventArgs e)
@@ -69,6 +50,23 @@ namespace HospitalMangementSystem
             {
                 LogcheckTxt.Visible = false;
             }
+        }
+
+        private void ShowPasswordTxt_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ShowPasswordTxt.Checked)
+            {
+                PasswordTxt.UseSystemPasswordChar = true;
+            }
+            else
+                PasswordTxt.UseSystemPasswordChar = false;
+
+        }
+
+        private void PasswordTxt_TextChanged(object sender, EventArgs e)
+        {
+            if(ShowPasswordTxt.Checked)
+                PasswordTxt.UseSystemPasswordChar = true;
         }
     }
 }

@@ -76,6 +76,9 @@ namespace HospitalMangementSystem
         private void SettingsBtn_Click(object sender, EventArgs e)
         {
             movepanel(SettingsBtn);
+            Settings settings = new Settings();
+            settings.Show();
+
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
