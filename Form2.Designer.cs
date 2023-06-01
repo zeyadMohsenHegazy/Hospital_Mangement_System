@@ -55,6 +55,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -62,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.TopRightPanel.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            this.MainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -355,9 +357,9 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(224, 567);
+            this.guna2Panel2.Location = new System.Drawing.Point(224, 571);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(847, 35);
+            this.guna2Panel2.Size = new System.Drawing.Size(847, 31);
             this.guna2Panel2.TabIndex = 2;
             // 
             // guna2HtmlLabel2
@@ -373,11 +375,24 @@
             // 
             // MainPanel
             // 
+            this.MainPanel.Controls.Add(this.SettingsTapCustomControl);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.Location = new System.Drawing.Point(224, 103);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(847, 464);
+            this.MainPanel.Size = new System.Drawing.Size(847, 468);
             this.MainPanel.TabIndex = 3;
+            // 
+            // SettingsTapCustomControl
+            // 
+            this.SettingsTapCustomControl.BackColor = System.Drawing.Color.White;
+            this.SettingsTapCustomControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SettingsTapCustomControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsTapCustomControl.Location = new System.Drawing.Point(0, 0);
+            this.SettingsTapCustomControl.Margin = new System.Windows.Forms.Padding(5);
+            this.SettingsTapCustomControl.Name = "SettingsTapCustomControl";
+            this.SettingsTapCustomControl.Size = new System.Drawing.Size(847, 469);
+            this.SettingsTapCustomControl.TabIndex = 0;
+            this.SettingsTapCustomControl.Visible = false;
             // 
             // timer1
             // 
@@ -408,6 +423,7 @@
             this.TopRightPanel.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            this.MainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -440,5 +456,6 @@
         private Guna.UI2.WinForms.Guna2Panel MainPanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel TimeNow;
         private System.Windows.Forms.Timer timer1;
+        private SettingsTap SettingsTapCustomControl;
     }
 }

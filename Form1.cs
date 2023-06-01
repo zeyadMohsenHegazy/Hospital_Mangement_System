@@ -11,17 +11,20 @@ using System.Windows.Forms;
 
 namespace HospitalMangementSystem
 {
-    public partial class Form1 : Form
+    
+    public partial class LoginForm : Form
     {
-        public Form1()
+        HospitalEntities hospitalEntities;
+        public LoginForm()
         {
             InitializeComponent();
+            hospitalEntities = new HospitalEntities();
         }
 
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            HospitalEntities hospitalEntities = new HospitalEntities();
+           
             var user = hospitalEntities.Users;
             var Query = (from z in hospitalEntities.Users
                          where z.UserName == UserNameTxt.Text && z.Password == PasswordTxt.Text

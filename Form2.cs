@@ -27,6 +27,7 @@ namespace HospitalMangementSystem
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             movepanel(PatientBtn);
+            SettingsTapCustomControl.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -56,29 +57,31 @@ namespace HospitalMangementSystem
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             movepanel(DoctorBtn);
+            SettingsTapCustomControl.Visible = false;
         }
 
         private void DepartmentBtn_Click(object sender, EventArgs e)
         {
             movepanel(DepartmentBtn);
+            SettingsTapCustomControl.Visible = false;
         }
 
         private void ReservationBtn_Click(object sender, EventArgs e)
         {
             movepanel(ReservationBtn);
+            SettingsTapCustomControl.Visible = false;
         }
 
         private void DashBoardBtn_Click(object sender, EventArgs e)
         {
             movepanel(DashBoardBtn);
+            SettingsTapCustomControl.Visible = false;
         }
 
         private void SettingsBtn_Click(object sender, EventArgs e)
         {
             movepanel(SettingsBtn);
-            Settings settings = new Settings();
-            settings.Show();
-
+            SettingsTapCustomControl.Visible = true;
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -90,5 +93,6 @@ namespace HospitalMangementSystem
         {
             this.Close();
         }
+
     }
 }

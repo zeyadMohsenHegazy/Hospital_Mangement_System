@@ -22,6 +22,7 @@ namespace HospitalMangementSystem
         public int ID { get; set; }
         public int Number { get; set; }
         public string Status { get; set; }
+        public string Name { get; set; }
     
         public virtual ICollection<Reservation> Reservations { get; set; }
     }
