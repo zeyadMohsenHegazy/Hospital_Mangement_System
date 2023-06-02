@@ -272,7 +272,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.Teal;
             this.linkLabel1.Location = new System.Drawing.Point(670, 73);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(60, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(61, 16);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Log Out";
@@ -292,7 +292,7 @@
             // 
             // TopRightPanel
             // 
-            this.TopRightPanel.BackColor = System.Drawing.Color.Teal;
+            this.TopRightPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.TopRightPanel.Controls.Add(this.TimeNow);
             this.TopRightPanel.Controls.Add(this.guna2ControlBox2);
             this.TopRightPanel.Controls.Add(this.guna2ControlBox1);
@@ -306,7 +306,7 @@
             // 
             this.TimeNow.BackColor = System.Drawing.Color.Transparent;
             this.TimeNow.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeNow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.TimeNow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.TimeNow.Location = new System.Drawing.Point(8, 12);
             this.TimeNow.Name = "TimeNow";
             this.TimeNow.Size = new System.Drawing.Size(69, 19);
