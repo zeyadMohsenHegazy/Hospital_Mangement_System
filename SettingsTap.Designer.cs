@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.TapControlUser = new Guna.UI2.WinForms.Guna2TabControl();
             this.TapAddUser = new System.Windows.Forms.TabPage();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -69,11 +67,6 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 2;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // TapControlUser
             // 
@@ -192,7 +185,7 @@
             this.PasswordTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PasswordTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PasswordTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PasswordTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTxt.Location = new System.Drawing.Point(171, 190);
             this.PasswordTxt.Name = "PasswordTxt";
@@ -211,7 +204,7 @@
             this.UserNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UserNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UserNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UserNameTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.UserNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UserNameTxt.Location = new System.Drawing.Point(171, 116);
             this.UserNameTxt.Name = "UserNameTxt";
@@ -296,7 +289,7 @@
             this.DoctorSpecializationTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DoctorSpecializationTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DoctorSpecializationTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DoctorSpecializationTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DoctorSpecializationTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorSpecializationTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DoctorSpecializationTxt.Location = new System.Drawing.Point(288, 277);
             this.DoctorSpecializationTxt.Name = "DoctorSpecializationTxt";
@@ -326,7 +319,7 @@
             this.DoctorSalaryTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DoctorSalaryTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DoctorSalaryTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DoctorSalaryTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DoctorSalaryTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorSalaryTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DoctorSalaryTxt.Location = new System.Drawing.Point(288, 221);
             this.DoctorSalaryTxt.Name = "DoctorSalaryTxt";
@@ -335,6 +328,7 @@
             this.DoctorSalaryTxt.SelectedText = "";
             this.DoctorSalaryTxt.Size = new System.Drawing.Size(200, 36);
             this.DoctorSalaryTxt.TabIndex = 16;
+            this.DoctorSalaryTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DoctorSalaryTxt_KeyPress);
             // 
             // guna2HtmlLabel4
             // 
@@ -356,7 +350,7 @@
             this.DoctorLastNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DoctorLastNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DoctorLastNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DoctorLastNameTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DoctorLastNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorLastNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DoctorLastNameTxt.Location = new System.Drawing.Point(288, 165);
             this.DoctorLastNameTxt.Name = "DoctorLastNameTxt";
@@ -406,7 +400,7 @@
             this.DoctorFirstNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DoctorFirstNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DoctorFirstNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DoctorFirstNameTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DoctorFirstNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorFirstNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DoctorFirstNameTxt.Location = new System.Drawing.Point(288, 109);
             this.DoctorFirstNameTxt.Name = "DoctorFirstNameTxt";
@@ -474,7 +468,7 @@
             this.DepartmentNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DepartmentNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DepartmentNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DepartmentNameTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DepartmentNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepartmentNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DepartmentNameTxt.Location = new System.Drawing.Point(291, 219);
             this.DepartmentNameTxt.Name = "DepartmentNameTxt";
@@ -524,7 +518,7 @@
             this.DepartmentNumberTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DepartmentNumberTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DepartmentNumberTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DepartmentNumberTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DepartmentNumberTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepartmentNumberTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DepartmentNumberTxt.Location = new System.Drawing.Point(291, 143);
             this.DepartmentNumberTxt.Name = "DepartmentNumberTxt";
@@ -533,6 +527,7 @@
             this.DepartmentNumberTxt.SelectedText = "";
             this.DepartmentNumberTxt.Size = new System.Drawing.Size(200, 36);
             this.DepartmentNumberTxt.TabIndex = 22;
+            this.DepartmentNumberTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DepartmentNumberTxt_KeyPress);
             // 
             // guna2HtmlLabel12
             // 
@@ -581,8 +576,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TabControl TapControlUser;
         private System.Windows.Forms.TabPage TapAddUser;
         private Guna.UI2.WinForms.Guna2HtmlLabel t;
