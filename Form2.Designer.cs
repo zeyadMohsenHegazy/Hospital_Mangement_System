@@ -58,6 +58,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
             this.elipseinPanelMovable = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -70,6 +71,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.panel1.Controls.Add(this.guna2HtmlLabel4);
             this.panel1.Controls.Add(this.PanelMovable);
             this.panel1.Controls.Add(this.DashBoardBtn);
             this.panel1.Controls.Add(this.ReservationBtn);
@@ -107,7 +109,7 @@
             this.DashBoardBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.DashBoardBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.DashBoardBtn.FillColor = System.Drawing.Color.Teal;
-            this.DashBoardBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DashBoardBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashBoardBtn.ForeColor = System.Drawing.Color.White;
             this.DashBoardBtn.Location = new System.Drawing.Point(17, 361);
             this.DashBoardBtn.Name = "DashBoardBtn";
@@ -125,7 +127,7 @@
             this.ReservationBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ReservationBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ReservationBtn.FillColor = System.Drawing.Color.Teal;
-            this.ReservationBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ReservationBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReservationBtn.ForeColor = System.Drawing.Color.White;
             this.ReservationBtn.Location = new System.Drawing.Point(17, 181);
             this.ReservationBtn.Name = "ReservationBtn";
@@ -143,13 +145,13 @@
             this.SettingsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.SettingsBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.SettingsBtn.FillColor = System.Drawing.Color.Teal;
-            this.SettingsBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.SettingsBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.SettingsBtn.ForeColor = System.Drawing.Color.White;
             this.SettingsBtn.Location = new System.Drawing.Point(17, 406);
             this.SettingsBtn.Name = "SettingsBtn";
             this.SettingsBtn.Size = new System.Drawing.Size(212, 44);
             this.SettingsBtn.TabIndex = 7;
-            this.SettingsBtn.Text = "settings";
+            this.SettingsBtn.Text = "Settings";
             this.SettingsBtn.Click += new System.EventHandler(this.SettingsBtn_Click);
             // 
             // DepartmentBtn
@@ -161,7 +163,7 @@
             this.DepartmentBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.DepartmentBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.DepartmentBtn.FillColor = System.Drawing.Color.Teal;
-            this.DepartmentBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DepartmentBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepartmentBtn.ForeColor = System.Drawing.Color.White;
             this.DepartmentBtn.Location = new System.Drawing.Point(17, 271);
             this.DepartmentBtn.Name = "DepartmentBtn";
@@ -180,7 +182,7 @@
             this.DoctorBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.DoctorBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.DoctorBtn.FillColor = System.Drawing.Color.Teal;
-            this.DoctorBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DoctorBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorBtn.ForeColor = System.Drawing.Color.White;
             this.DoctorBtn.Location = new System.Drawing.Point(17, 226);
             this.DoctorBtn.Name = "DoctorBtn";
@@ -198,7 +200,7 @@
             this.PatientBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.PatientBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.PatientBtn.FillColor = System.Drawing.Color.Teal;
-            this.PatientBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PatientBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientBtn.ForeColor = System.Drawing.Color.White;
             this.PatientBtn.Location = new System.Drawing.Point(17, 316);
             this.PatientBtn.Name = "PatientBtn";
@@ -210,19 +212,19 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Teal;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(22, 118);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(39, 114);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(174, 19);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 23);
             this.guna2HtmlLabel1.TabIndex = 3;
-            this.guna2HtmlLabel1.Text = "Hospital Mangment System";
+            this.guna2HtmlLabel1.Text = "Hospital Mangment";
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::HospitalMangementSystem.Properties.Resources.LOGO;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(45, 3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(50, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(132, 134);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -405,6 +407,17 @@
             this.elipseinPanelMovable.BorderRadius = 2;
             this.elipseinPanelMovable.TargetControl = this.PanelMovable;
             // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Teal;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(87, 139);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(58, 23);
+            this.guna2HtmlLabel4.TabIndex = 11;
+            this.guna2HtmlLabel4.Text = "System";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -465,5 +478,6 @@
         private System.Windows.Forms.Timer timer1;
         private SettingsTap SettingsTapCustomControl;
         private Guna.UI2.WinForms.Guna2Elipse elipseinPanelMovable;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
     }
 }
