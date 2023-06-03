@@ -127,7 +127,7 @@
             this.ReservationBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ReservationBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ReservationBtn.FillColor = System.Drawing.Color.Teal;
-            this.ReservationBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReservationBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.ReservationBtn.ForeColor = System.Drawing.Color.White;
             this.ReservationBtn.Location = new System.Drawing.Point(17, 181);
             this.ReservationBtn.Name = "ReservationBtn";
@@ -182,7 +182,7 @@
             this.DoctorBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.DoctorBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.DoctorBtn.FillColor = System.Drawing.Color.Teal;
-            this.DoctorBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoctorBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.DoctorBtn.ForeColor = System.Drawing.Color.White;
             this.DoctorBtn.Location = new System.Drawing.Point(17, 226);
             this.DoctorBtn.Name = "DoctorBtn";
@@ -200,7 +200,7 @@
             this.PatientBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.PatientBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.PatientBtn.FillColor = System.Drawing.Color.Teal;
-            this.PatientBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.PatientBtn.ForeColor = System.Drawing.Color.White;
             this.PatientBtn.Location = new System.Drawing.Point(17, 316);
             this.PatientBtn.Name = "PatientBtn";
