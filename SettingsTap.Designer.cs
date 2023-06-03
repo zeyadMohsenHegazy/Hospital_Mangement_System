@@ -79,7 +79,7 @@
             this.TapControlUser.Location = new System.Drawing.Point(0, 0);
             this.TapControlUser.Name = "TapControlUser";
             this.TapControlUser.SelectedIndex = 0;
-            this.TapControlUser.Size = new System.Drawing.Size(847, 464);
+            this.TapControlUser.Size = new System.Drawing.Size(847, 482);
             this.TapControlUser.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.TapControlUser.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.TapControlUser.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -116,7 +116,7 @@
             this.TapAddUser.Location = new System.Drawing.Point(4, 4);
             this.TapAddUser.Name = "TapAddUser";
             this.TapAddUser.Padding = new System.Windows.Forms.Padding(3);
-            this.TapAddUser.Size = new System.Drawing.Size(839, 416);
+            this.TapAddUser.Size = new System.Drawing.Size(839, 434);
             this.TapAddUser.TabIndex = 0;
             this.TapAddUser.Text = "Add new User";
             // 
@@ -188,6 +188,7 @@
             this.PasswordTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTxt.Location = new System.Drawing.Point(171, 190);
+            this.PasswordTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PasswordTxt.Name = "PasswordTxt";
             this.PasswordTxt.PasswordChar = '\0';
             this.PasswordTxt.PlaceholderText = "";
@@ -207,6 +208,7 @@
             this.UserNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UserNameTxt.Location = new System.Drawing.Point(171, 116);
+            this.UserNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UserNameTxt.Name = "UserNameTxt";
             this.UserNameTxt.PasswordChar = '\0';
             this.UserNameTxt.PlaceholderText = "";
@@ -263,7 +265,7 @@
             this.AddDoctorTap.Location = new System.Drawing.Point(4, 4);
             this.AddDoctorTap.Name = "AddDoctorTap";
             this.AddDoctorTap.Padding = new System.Windows.Forms.Padding(3);
-            this.AddDoctorTap.Size = new System.Drawing.Size(839, 416);
+            this.AddDoctorTap.Size = new System.Drawing.Size(839, 434);
             this.AddDoctorTap.TabIndex = 1;
             this.AddDoctorTap.Text = "Add new Doctor";
             this.AddDoctorTap.UseVisualStyleBackColor = true;
@@ -292,6 +294,7 @@
             this.DoctorSpecializationTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorSpecializationTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DoctorSpecializationTxt.Location = new System.Drawing.Point(288, 277);
+            this.DoctorSpecializationTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DoctorSpecializationTxt.Name = "DoctorSpecializationTxt";
             this.DoctorSpecializationTxt.PasswordChar = '\0';
             this.DoctorSpecializationTxt.PlaceholderText = "";
@@ -322,6 +325,7 @@
             this.DoctorSalaryTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorSalaryTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DoctorSalaryTxt.Location = new System.Drawing.Point(288, 221);
+            this.DoctorSalaryTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DoctorSalaryTxt.Name = "DoctorSalaryTxt";
             this.DoctorSalaryTxt.PasswordChar = '\0';
             this.DoctorSalaryTxt.PlaceholderText = "";
@@ -353,6 +357,7 @@
             this.DoctorLastNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorLastNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DoctorLastNameTxt.Location = new System.Drawing.Point(288, 165);
+            this.DoctorLastNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DoctorLastNameTxt.Name = "DoctorLastNameTxt";
             this.DoctorLastNameTxt.PasswordChar = '\0';
             this.DoctorLastNameTxt.PlaceholderText = "";
@@ -403,6 +408,7 @@
             this.DoctorFirstNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorFirstNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DoctorFirstNameTxt.Location = new System.Drawing.Point(288, 109);
+            this.DoctorFirstNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DoctorFirstNameTxt.Name = "DoctorFirstNameTxt";
             this.DoctorFirstNameTxt.PasswordChar = '\0';
             this.DoctorFirstNameTxt.PlaceholderText = "";
@@ -444,7 +450,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(839, 416);
+            this.tabPage3.Size = new System.Drawing.Size(839, 434);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Add new Department";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -471,6 +477,7 @@
             this.DepartmentNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepartmentNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DepartmentNameTxt.Location = new System.Drawing.Point(291, 219);
+            this.DepartmentNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DepartmentNameTxt.Name = "DepartmentNameTxt";
             this.DepartmentNameTxt.PasswordChar = '\0';
             this.DepartmentNameTxt.PlaceholderText = "";
@@ -521,6 +528,7 @@
             this.DepartmentNumberTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepartmentNumberTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DepartmentNumberTxt.Location = new System.Drawing.Point(291, 143);
+            this.DepartmentNumberTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DepartmentNumberTxt.Name = "DepartmentNumberTxt";
             this.DepartmentNumberTxt.PasswordChar = '\0';
             this.DepartmentNumberTxt.PlaceholderText = "";
@@ -560,7 +568,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "SettingsTap";
-            this.Size = new System.Drawing.Size(847, 464);
+            this.Size = new System.Drawing.Size(847, 482);
             this.TapControlUser.ResumeLayout(false);
             this.TapAddUser.ResumeLayout(false);
             this.TapAddUser.PerformLayout();

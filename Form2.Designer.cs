@@ -55,8 +55,9 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
+            this.elipseinPanelMovable = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -87,11 +88,12 @@
             // 
             // PanelMovable
             // 
-            this.PanelMovable.BackColor = System.Drawing.Color.White;
+            this.PanelMovable.BackColor = System.Drawing.Color.Teal;
             this.PanelMovable.BorderColor = System.Drawing.Color.Transparent;
-            this.PanelMovable.BorderRadius = 5;
-            this.PanelMovable.BorderThickness = 1;
-            this.PanelMovable.Location = new System.Drawing.Point(7, 182);
+            this.PanelMovable.BorderRadius = 2;
+            this.PanelMovable.BorderThickness = 2;
+            this.PanelMovable.Enabled = false;
+            this.PanelMovable.Location = new System.Drawing.Point(5, 182);
             this.PanelMovable.Name = "PanelMovable";
             this.PanelMovable.Size = new System.Drawing.Size(10, 42);
             this.PanelMovable.TabIndex = 10;
@@ -107,9 +109,9 @@
             this.DashBoardBtn.FillColor = System.Drawing.Color.Teal;
             this.DashBoardBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DashBoardBtn.ForeColor = System.Drawing.Color.White;
-            this.DashBoardBtn.Location = new System.Drawing.Point(21, 361);
+            this.DashBoardBtn.Location = new System.Drawing.Point(17, 361);
             this.DashBoardBtn.Name = "DashBoardBtn";
-            this.DashBoardBtn.Size = new System.Drawing.Size(203, 44);
+            this.DashBoardBtn.Size = new System.Drawing.Size(212, 44);
             this.DashBoardBtn.TabIndex = 9;
             this.DashBoardBtn.Text = "DashBoard";
             this.DashBoardBtn.Click += new System.EventHandler(this.DashBoardBtn_Click);
@@ -125,9 +127,9 @@
             this.ReservationBtn.FillColor = System.Drawing.Color.Teal;
             this.ReservationBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ReservationBtn.ForeColor = System.Drawing.Color.White;
-            this.ReservationBtn.Location = new System.Drawing.Point(21, 316);
+            this.ReservationBtn.Location = new System.Drawing.Point(17, 181);
             this.ReservationBtn.Name = "ReservationBtn";
-            this.ReservationBtn.Size = new System.Drawing.Size(203, 44);
+            this.ReservationBtn.Size = new System.Drawing.Size(212, 44);
             this.ReservationBtn.TabIndex = 8;
             this.ReservationBtn.Text = "Reservations";
             this.ReservationBtn.Click += new System.EventHandler(this.ReservationBtn_Click);
@@ -143,9 +145,9 @@
             this.SettingsBtn.FillColor = System.Drawing.Color.Teal;
             this.SettingsBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.SettingsBtn.ForeColor = System.Drawing.Color.White;
-            this.SettingsBtn.Location = new System.Drawing.Point(21, 406);
+            this.SettingsBtn.Location = new System.Drawing.Point(17, 406);
             this.SettingsBtn.Name = "SettingsBtn";
-            this.SettingsBtn.Size = new System.Drawing.Size(203, 44);
+            this.SettingsBtn.Size = new System.Drawing.Size(212, 44);
             this.SettingsBtn.TabIndex = 7;
             this.SettingsBtn.Text = "settings";
             this.SettingsBtn.Click += new System.EventHandler(this.SettingsBtn_Click);
@@ -161,9 +163,9 @@
             this.DepartmentBtn.FillColor = System.Drawing.Color.Teal;
             this.DepartmentBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DepartmentBtn.ForeColor = System.Drawing.Color.White;
-            this.DepartmentBtn.Location = new System.Drawing.Point(21, 271);
+            this.DepartmentBtn.Location = new System.Drawing.Point(17, 271);
             this.DepartmentBtn.Name = "DepartmentBtn";
-            this.DepartmentBtn.Size = new System.Drawing.Size(203, 44);
+            this.DepartmentBtn.Size = new System.Drawing.Size(212, 44);
             this.DepartmentBtn.TabIndex = 6;
             this.DepartmentBtn.Text = "Department";
             this.DepartmentBtn.Click += new System.EventHandler(this.DepartmentBtn_Click);
@@ -180,9 +182,9 @@
             this.DoctorBtn.FillColor = System.Drawing.Color.Teal;
             this.DoctorBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DoctorBtn.ForeColor = System.Drawing.Color.White;
-            this.DoctorBtn.Location = new System.Drawing.Point(21, 226);
+            this.DoctorBtn.Location = new System.Drawing.Point(17, 226);
             this.DoctorBtn.Name = "DoctorBtn";
-            this.DoctorBtn.Size = new System.Drawing.Size(203, 44);
+            this.DoctorBtn.Size = new System.Drawing.Size(212, 44);
             this.DoctorBtn.TabIndex = 5;
             this.DoctorBtn.Text = "Doctors";
             this.DoctorBtn.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -198,9 +200,9 @@
             this.PatientBtn.FillColor = System.Drawing.Color.Teal;
             this.PatientBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.PatientBtn.ForeColor = System.Drawing.Color.White;
-            this.PatientBtn.Location = new System.Drawing.Point(21, 181);
+            this.PatientBtn.Location = new System.Drawing.Point(17, 316);
             this.PatientBtn.Name = "PatientBtn";
-            this.PatientBtn.Size = new System.Drawing.Size(203, 44);
+            this.PatientBtn.Size = new System.Drawing.Size(212, 44);
             this.PatientBtn.TabIndex = 4;
             this.PatientBtn.Text = "Patient";
             this.PatientBtn.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -238,7 +240,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(224, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(847, 103);
+            this.guna2Panel1.Size = new System.Drawing.Size(847, 89);
             this.guna2Panel1.TabIndex = 1;
             // 
             // UserNameLabel
@@ -246,7 +248,7 @@
             this.UserNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.UserNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLabel.ForeColor = System.Drawing.Color.Teal;
-            this.UserNameLabel.Location = new System.Drawing.Point(107, 63);
+            this.UserNameLabel.Location = new System.Drawing.Point(107, 52);
             this.UserNameLabel.Name = "UserNameLabel";
             this.UserNameLabel.Size = new System.Drawing.Size(14, 26);
             this.UserNameLabel.TabIndex = 6;
@@ -257,7 +259,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Teal;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(6, 63);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(6, 52);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(97, 26);
             this.guna2HtmlLabel3.TabIndex = 5;
@@ -270,9 +272,9 @@
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.ForeColor = System.Drawing.Color.Teal;
             this.linkLabel1.LinkColor = System.Drawing.Color.Teal;
-            this.linkLabel1.Location = new System.Drawing.Point(670, 73);
+            this.linkLabel1.Location = new System.Drawing.Point(670, 63);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(61, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(60, 16);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Log Out";
@@ -283,9 +285,9 @@
             // 
             this.guna2PictureBox2.Image = global::HospitalMangementSystem.Properties.Resources.man;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(620, 45);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(620, 43);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(51, 55);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(44, 44);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 3;
             this.guna2PictureBox2.TabStop = false;
@@ -299,7 +301,7 @@
             this.TopRightPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopRightPanel.Location = new System.Drawing.Point(0, 0);
             this.TopRightPanel.Name = "TopRightPanel";
-            this.TopRightPanel.Size = new System.Drawing.Size(847, 42);
+            this.TopRightPanel.Size = new System.Drawing.Size(847, 39);
             this.TopRightPanel.TabIndex = 0;
             // 
             // TimeNow
@@ -307,7 +309,7 @@
             this.TimeNow.BackColor = System.Drawing.Color.Transparent;
             this.TimeNow.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimeNow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.TimeNow.Location = new System.Drawing.Point(8, 12);
+            this.TimeNow.Location = new System.Drawing.Point(301, 12);
             this.TimeNow.Name = "TimeNow";
             this.TimeNow.Size = new System.Drawing.Size(69, 19);
             this.TimeNow.TabIndex = 0;
@@ -377,10 +379,14 @@
             // 
             this.MainPanel.Controls.Add(this.SettingsTapCustomControl);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(224, 103);
+            this.MainPanel.Location = new System.Drawing.Point(224, 89);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(847, 468);
+            this.MainPanel.Size = new System.Drawing.Size(847, 482);
             this.MainPanel.TabIndex = 3;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SettingsTapCustomControl
             // 
@@ -390,13 +396,14 @@
             this.SettingsTapCustomControl.Location = new System.Drawing.Point(0, 0);
             this.SettingsTapCustomControl.Margin = new System.Windows.Forms.Padding(5);
             this.SettingsTapCustomControl.Name = "SettingsTapCustomControl";
-            this.SettingsTapCustomControl.Size = new System.Drawing.Size(847, 469);
+            this.SettingsTapCustomControl.Size = new System.Drawing.Size(847, 482);
             this.SettingsTapCustomControl.TabIndex = 0;
             this.SettingsTapCustomControl.Visible = false;
             // 
-            // timer1
+            // elipseinPanelMovable
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.elipseinPanelMovable.BorderRadius = 2;
+            this.elipseinPanelMovable.TargetControl = this.PanelMovable;
             // 
             // Main
             // 
@@ -457,5 +464,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel TimeNow;
         private System.Windows.Forms.Timer timer1;
         private SettingsTap SettingsTapCustomControl;
+        private Guna.UI2.WinForms.Guna2Elipse elipseinPanelMovable;
     }
 }
