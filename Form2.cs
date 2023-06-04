@@ -94,5 +94,10 @@ namespace HospitalMangementSystem
             this.Close();
         }
 
+        private void ReportsBtn_Click(object sender, EventArgs e)
+        {
+            movepanel(ReportsBtn);
+
+        }
     }
 }
