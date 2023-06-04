@@ -137,7 +137,7 @@
             this.guna2Button1.Location = new System.Drawing.Point(97, 315);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(82, 37);
-            this.guna2Button1.TabIndex = 6;
+            this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "Login";
             this.guna2Button1.UseTransparentBackground = true;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -165,7 +165,7 @@
             this.label1.Location = new System.Drawing.Point(66, 275);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 13);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 3;
             this.label1.Text = "show password";
             // 
             // ShowPasswordTxt

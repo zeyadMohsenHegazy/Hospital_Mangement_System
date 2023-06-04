@@ -16,7 +16,7 @@ namespace HospitalMangementSystem
     {
         public Patien()
         {
-            this.Reservations = new HashSet<Reservation>();
+            //this.Reservations = new HashSet<Reservation>();
         }
     
         public int ID { get; set; }

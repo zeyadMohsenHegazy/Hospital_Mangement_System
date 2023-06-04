@@ -24,7 +24,11 @@ namespace HospitalMangementSystem
         public string LastName { get; set; }
         public int Salary { get; set; }
         public string Specialization { get; set; }
-    
+
+        public override string ToString()
+        {
+            return $"Dr: {FirstName} {LastName}";
+        }
         public virtual ICollection<Reservation> Reservations { get; set; }
     }
 }

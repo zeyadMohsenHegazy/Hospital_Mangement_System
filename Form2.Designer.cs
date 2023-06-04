@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ReportsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -62,11 +64,12 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.reservationsCustomControl1 = new HospitalMangementSystem.ReservationsCustomControl();
             this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.elipseinPanelMovable = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.ReportsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
@@ -84,6 +87,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.panel1.Controls.Add(this.guna2PictureBox9);
             this.panel1.Controls.Add(this.ReportsBtn);
             this.panel1.Controls.Add(this.guna2PictureBox8);
             this.panel1.Controls.Add(this.guna2PictureBox7);
@@ -107,6 +111,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(224, 602);
             this.panel1.TabIndex = 0;
+            // 
+            // guna2PictureBox9
+            // 
+            this.guna2PictureBox9.BackColor = System.Drawing.Color.Teal;
+            this.guna2PictureBox9.Image = global::HospitalMangementSystem.Properties.Resources._3d_report;
+            this.guna2PictureBox9.ImageRotate = 0F;
+            this.guna2PictureBox9.Location = new System.Drawing.Point(19, 454);
+            this.guna2PictureBox9.Name = "guna2PictureBox9";
+            this.guna2PictureBox9.Size = new System.Drawing.Size(41, 38);
+            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox9.TabIndex = 18;
+            this.guna2PictureBox9.TabStop = false;
+            // 
+            // ReportsBtn
+            // 
+            this.ReportsBtn.Animated = true;
+            this.ReportsBtn.BorderRadius = 2;
+            this.ReportsBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ReportsBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ReportsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ReportsBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ReportsBtn.FillColor = System.Drawing.Color.Teal;
+            this.ReportsBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ReportsBtn.ForeColor = System.Drawing.Color.White;
+            this.ReportsBtn.Location = new System.Drawing.Point(17, 451);
+            this.ReportsBtn.Name = "ReportsBtn";
+            this.ReportsBtn.Size = new System.Drawing.Size(212, 44);
+            this.ReportsBtn.TabIndex = 17;
+            this.ReportsBtn.Text = "Reports";
+            this.ReportsBtn.Click += new System.EventHandler(this.ReportsBtn_Click);
             // 
             // guna2PictureBox8
             // 
@@ -185,7 +219,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Teal;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(87, 139);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(82, 139);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(58, 23);
             this.guna2HtmlLabel4.TabIndex = 11;
@@ -317,7 +351,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Teal;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(39, 114);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(34, 114);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 23);
             this.guna2HtmlLabel1.TabIndex = 3;
@@ -327,7 +361,7 @@
             // 
             this.guna2PictureBox1.Image = global::HospitalMangementSystem.Properties.Resources.LOGO;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(50, 3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(45, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(132, 134);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -482,12 +516,21 @@
             // 
             // MainPanel
             // 
+            this.MainPanel.Controls.Add(this.reservationsCustomControl1);
             this.MainPanel.Controls.Add(this.SettingsTapCustomControl);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.Location = new System.Drawing.Point(224, 89);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(847, 482);
             this.MainPanel.TabIndex = 3;
+            // 
+            // reservationsCustomControl1
+            // 
+            this.reservationsCustomControl1.BackColor = System.Drawing.Color.White;
+            this.reservationsCustomControl1.Location = new System.Drawing.Point(0, 0);
+            this.reservationsCustomControl1.Name = "reservationsCustomControl1";
+            this.reservationsCustomControl1.Size = new System.Drawing.Size(847, 482);
+            this.reservationsCustomControl1.TabIndex = 1;
             // 
             // SettingsTapCustomControl
             // 
@@ -510,24 +553,6 @@
             this.elipseinPanelMovable.BorderRadius = 2;
             this.elipseinPanelMovable.TargetControl = this.PanelMovable;
             // 
-            // ReportsBtn
-            // 
-            this.ReportsBtn.Animated = true;
-            this.ReportsBtn.BorderRadius = 2;
-            this.ReportsBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ReportsBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ReportsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ReportsBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ReportsBtn.FillColor = System.Drawing.Color.Teal;
-            this.ReportsBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.ReportsBtn.ForeColor = System.Drawing.Color.White;
-            this.ReportsBtn.Location = new System.Drawing.Point(17, 451);
-            this.ReportsBtn.Name = "ReportsBtn";
-            this.ReportsBtn.Size = new System.Drawing.Size(212, 44);
-            this.ReportsBtn.TabIndex = 17;
-            this.ReportsBtn.Text = "Reports";
-            this.ReportsBtn.Click += new System.EventHandler(this.ReportsBtn_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -545,6 +570,7 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
@@ -602,5 +628,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2Button ReportsBtn;
+        private ReservationsCustomControl reservationsCustomControl1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
     }
 }

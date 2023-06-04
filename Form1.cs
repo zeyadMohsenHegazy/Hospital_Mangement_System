@@ -14,6 +14,7 @@ namespace HospitalMangementSystem
     
     public partial class LoginForm : Form
     {
+
         HospitalEntities hospitalEntities;
         public LoginForm()
         {

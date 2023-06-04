@@ -31,13 +31,7 @@ namespace HospitalMangementSystem
 
             string name = UserNameTxt.Text.Trim();
             string pass = PasswordTxt.Text.Trim();
-            var selectedItems = RoleList.SelectedItems;
-            string Role = "";
-            foreach (var selectedItem in selectedItems)
-            {
-                Role = selectedItem.ToString();
-            }
-
+            string Role = RoleList.SelectedItem.ToString();
             if (!(Regex.IsMatch(name, usernamePattern)) || (!Regex.IsMatch(pass, passwordPattern) ))
             {
                 //warring message

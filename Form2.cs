@@ -12,11 +12,13 @@ namespace HospitalMangementSystem
 {
     public partial class Main : Form
     {
+        HospitalEntities hospital;
         public string UserNameL;
         public string Role;
         public Main()
         {
             InitializeComponent();
+            hospital = new HospitalEntities();
         }
         private void movepanel(Control Btn)
         {
@@ -37,7 +39,8 @@ namespace HospitalMangementSystem
 
         private void Main_Load(object sender, EventArgs e)
         {
-            HospitalEntities hospital = new HospitalEntities();
+            ReservationsCustomControl RCC = new ReservationsCustomControl();
+            RCC.GetUserName = UserNameL;
             var users = hospital.Users;
             foreach(var item in users)
             {
@@ -47,41 +50,45 @@ namespace HospitalMangementSystem
                     {
                         DashBoardBtn.Visible = false;
                         SettingsBtn.Visible = false;
+                        ReportsBtn.Visible = false;
                     }
                 }
             }
-            timer1.Start();
             UserNameLabel.Text = UserNameL;
+            timer1.Start();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             movepanel(DoctorBtn);
-            SettingsTapCustomControl.Visible = false;
+            reservationsCustomControl1.Visible = false;
         }
 
         private void DepartmentBtn_Click(object sender, EventArgs e)
         {
             movepanel(DepartmentBtn);
-            SettingsTapCustomControl.Visible = false;
+            reservationsCustomControl1.Visible = false;
+
         }
 
         private void ReservationBtn_Click(object sender, EventArgs e)
         {
             movepanel(ReservationBtn);
-            SettingsTapCustomControl.Visible = false;
+            reservationsCustomControl1.Visible = true;
         }
 
         private void DashBoardBtn_Click(object sender, EventArgs e)
         {
             movepanel(DashBoardBtn);
-            SettingsTapCustomControl.Visible = false;
+            reservationsCustomControl1.Visible = false;
+
         }
 
         private void SettingsBtn_Click(object sender, EventArgs e)
         {
             movepanel(SettingsBtn);
             SettingsTapCustomControl.Visible = true;
+            reservationsCustomControl1.Visible = false;
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -97,7 +104,11 @@ namespace HospitalMangementSystem
         private void ReportsBtn_Click(object sender, EventArgs e)
         {
             movepanel(ReportsBtn);
+            reservationsCustomControl1.Visible = false;
+            SettingsTapCustomControl.Visible = false;
 
         }
+
+        
     }
 }

@@ -213,6 +213,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\3d-report.png" />
+    <None Include="Resources\statistics.png" />
     <None Include="Resources\enterprise.png" />
     <None Include="Resources\settings.png" />
     <None Include="Resources\dashboard.png" />
