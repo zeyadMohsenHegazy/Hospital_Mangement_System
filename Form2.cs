@@ -30,6 +30,9 @@ namespace HospitalMangementSystem
         {
             movepanel(PatientBtn);
             SettingsTapCustomControl.Visible = false;
+            PatientCustomControl.Visible = true;
+            doctorCustomConrol1.Visible = false;
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -65,12 +68,15 @@ namespace HospitalMangementSystem
         {
             movepanel(DoctorBtn);
             reservationsCustomControl1.Visible = false;
+            doctorCustomConrol1.Visible = true;
         }
 
         private void DepartmentBtn_Click(object sender, EventArgs e)
         {
             movepanel(DepartmentBtn);
             reservationsCustomControl1.Visible = false;
+            doctorCustomConrol1.Visible = false;
+            PatientCustomControl.Visible = false;
 
         }
 
@@ -78,6 +84,9 @@ namespace HospitalMangementSystem
         {
             movepanel(ReservationBtn);
             reservationsCustomControl1.Visible = true;
+            doctorCustomConrol1.Visible = false;
+            PatientCustomControl.Visible = false;
+
         }
 
         private void DashBoardBtn_Click(object sender, EventArgs e)
@@ -85,6 +94,9 @@ namespace HospitalMangementSystem
             movepanel(DashBoardBtn);
             reservationsCustomControl1.Visible = false;
             SettingsTapCustomControl.Visible = false;
+            doctorCustomConrol1.Visible = false;
+            PatientCustomControl.Visible = false;
+
 
         }
 
@@ -93,6 +105,10 @@ namespace HospitalMangementSystem
             movepanel(SettingsBtn);
             SettingsTapCustomControl.Visible = true;
             reservationsCustomControl1.Visible = false;
+            doctorCustomConrol1.Visible = false;
+            PatientCustomControl.Visible = false;
+
+
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -110,6 +126,8 @@ namespace HospitalMangementSystem
             movepanel(ReportsBtn);
             reservationsCustomControl1.Visible = false;
             SettingsTapCustomControl.Visible = false;
+            doctorCustomConrol1.Visible = false;
+            PatientCustomControl.Visible = false;
 
         }
 

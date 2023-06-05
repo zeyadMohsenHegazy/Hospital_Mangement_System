@@ -12,9 +12,27 @@ namespace HospitalMangementSystem
 {
     public partial class Patient : UserControl
     {
+        HospitalEntities hospital;
         public Patient()
         {
             InitializeComponent();
+            hospital = new HospitalEntities();
         }
+
+        private void AddNewUserBtn_Click(object sender, EventArgs e)
+        {
+            string firstName = FirstNameTxt.Text;
+            string lastName = LastNameTxt.Text;
+            var data = hospital.Patiens.Where(p => p.FirstName == firstName && p.LastName == lastName).FirstOrDefault();
+            label1.Text = data.FirstName;
+            label2.Text = data.LastName;
+            label3.Text = data.Age.ToString();
+            label4.Text = data.Gender.Equals("f") ? "FEMALE" : "MALE";
+            label5.Text = data.BloodType;
+            label6.Text = data.phone;
+            label7.Text = data.email;
+        }
+
+
     }
 }
