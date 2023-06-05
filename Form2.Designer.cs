@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ReportsImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ReportsBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DashboardImg = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.SettingsImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -64,14 +64,14 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.reservationsCustomControl1 = new HospitalMangementSystem.ReservationsCustomControl();
-            this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.elipseinPanelMovable = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.reservationsCustomControl1 = new HospitalMangementSystem.ReservationsCustomControl();
+            this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReportsImg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DashboardImg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
@@ -87,10 +87,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.panel1.Controls.Add(this.guna2PictureBox9);
+            this.panel1.Controls.Add(this.ReportsImg);
             this.panel1.Controls.Add(this.ReportsBtn);
-            this.panel1.Controls.Add(this.guna2PictureBox8);
-            this.panel1.Controls.Add(this.guna2PictureBox7);
+            this.panel1.Controls.Add(this.DashboardImg);
+            this.panel1.Controls.Add(this.SettingsImg);
             this.panel1.Controls.Add(this.guna2PictureBox6);
             this.panel1.Controls.Add(this.guna2PictureBox5);
             this.panel1.Controls.Add(this.guna2PictureBox4);
@@ -109,20 +109,20 @@
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(224, 602);
+            this.panel1.Size = new System.Drawing.Size(266, 644);
             this.panel1.TabIndex = 0;
             // 
-            // guna2PictureBox9
+            // ReportsImg
             // 
-            this.guna2PictureBox9.BackColor = System.Drawing.Color.Teal;
-            this.guna2PictureBox9.Image = global::HospitalMangementSystem.Properties.Resources._3d_report;
-            this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(19, 454);
-            this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.Size = new System.Drawing.Size(41, 38);
-            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox9.TabIndex = 18;
-            this.guna2PictureBox9.TabStop = false;
+            this.ReportsImg.BackColor = System.Drawing.Color.Teal;
+            this.ReportsImg.Image = global::HospitalMangementSystem.Properties.Resources._3d_report;
+            this.ReportsImg.ImageRotate = 0F;
+            this.ReportsImg.Location = new System.Drawing.Point(34, 530);
+            this.ReportsImg.Name = "ReportsImg";
+            this.ReportsImg.Size = new System.Drawing.Size(41, 38);
+            this.ReportsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ReportsImg.TabIndex = 18;
+            this.ReportsImg.TabStop = false;
             // 
             // ReportsBtn
             // 
@@ -133,45 +133,45 @@
             this.ReportsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ReportsBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ReportsBtn.FillColor = System.Drawing.Color.Teal;
-            this.ReportsBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ReportsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReportsBtn.ForeColor = System.Drawing.Color.White;
-            this.ReportsBtn.Location = new System.Drawing.Point(17, 451);
+            this.ReportsBtn.Location = new System.Drawing.Point(22, 524);
             this.ReportsBtn.Name = "ReportsBtn";
-            this.ReportsBtn.Size = new System.Drawing.Size(212, 44);
+            this.ReportsBtn.Size = new System.Drawing.Size(244, 54);
             this.ReportsBtn.TabIndex = 17;
-            this.ReportsBtn.Text = "Reports";
+            this.ReportsBtn.Text = "   Reports";
             this.ReportsBtn.Click += new System.EventHandler(this.ReportsBtn_Click);
             // 
-            // guna2PictureBox8
+            // DashboardImg
             // 
-            this.guna2PictureBox8.BackColor = System.Drawing.Color.Teal;
-            this.guna2PictureBox8.Image = global::HospitalMangementSystem.Properties.Resources.dashboard;
-            this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(22, 366);
-            this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.Size = new System.Drawing.Size(36, 34);
-            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox8.TabIndex = 16;
-            this.guna2PictureBox8.TabStop = false;
+            this.DashboardImg.BackColor = System.Drawing.Color.Teal;
+            this.DashboardImg.Image = global::HospitalMangementSystem.Properties.Resources.dashboard;
+            this.DashboardImg.ImageRotate = 0F;
+            this.DashboardImg.Location = new System.Drawing.Point(34, 422);
+            this.DashboardImg.Name = "DashboardImg";
+            this.DashboardImg.Size = new System.Drawing.Size(36, 34);
+            this.DashboardImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DashboardImg.TabIndex = 16;
+            this.DashboardImg.TabStop = false;
             // 
-            // guna2PictureBox7
+            // SettingsImg
             // 
-            this.guna2PictureBox7.BackColor = System.Drawing.Color.Teal;
-            this.guna2PictureBox7.Image = global::HospitalMangementSystem.Properties.Resources.settings;
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(20, 409);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(41, 38);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox7.TabIndex = 15;
-            this.guna2PictureBox7.TabStop = false;
+            this.SettingsImg.BackColor = System.Drawing.Color.Teal;
+            this.SettingsImg.Image = global::HospitalMangementSystem.Properties.Resources.settings;
+            this.SettingsImg.ImageRotate = 0F;
+            this.SettingsImg.Location = new System.Drawing.Point(34, 475);
+            this.SettingsImg.Name = "SettingsImg";
+            this.SettingsImg.Size = new System.Drawing.Size(41, 38);
+            this.SettingsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SettingsImg.TabIndex = 15;
+            this.SettingsImg.TabStop = false;
             // 
             // guna2PictureBox6
             // 
             this.guna2PictureBox6.BackColor = System.Drawing.Color.Teal;
             this.guna2PictureBox6.Image = global::HospitalMangementSystem.Properties.Resources.enterprise;
             this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(19, 274);
+            this.guna2PictureBox6.Location = new System.Drawing.Point(34, 309);
             this.guna2PictureBox6.Name = "guna2PictureBox6";
             this.guna2PictureBox6.Size = new System.Drawing.Size(43, 39);
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -183,7 +183,7 @@
             this.guna2PictureBox5.BackColor = System.Drawing.Color.Teal;
             this.guna2PictureBox5.Image = global::HospitalMangementSystem.Properties.Resources.patient;
             this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(21, 319);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(34, 365);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.Size = new System.Drawing.Size(39, 38);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -195,9 +195,9 @@
             this.guna2PictureBox4.BackColor = System.Drawing.Color.Teal;
             this.guna2PictureBox4.Image = global::HospitalMangementSystem.Properties.Resources.doctor;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(20, 229);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(34, 251);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(40, 38);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(40, 42);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox4.TabIndex = 12;
             this.guna2PictureBox4.TabStop = false;
@@ -207,7 +207,7 @@
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Teal;
             this.guna2PictureBox3.Image = global::HospitalMangementSystem.Properties.Resources.reserve;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(19, 182);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(34, 195);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(43, 42);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -219,7 +219,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Teal;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(82, 139);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(101, 148);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(58, 23);
             this.guna2HtmlLabel4.TabIndex = 11;
@@ -232,9 +232,9 @@
             this.PanelMovable.BorderRadius = 2;
             this.PanelMovable.BorderThickness = 2;
             this.PanelMovable.Enabled = false;
-            this.PanelMovable.Location = new System.Drawing.Point(5, 182);
+            this.PanelMovable.Location = new System.Drawing.Point(7, 188);
             this.PanelMovable.Name = "PanelMovable";
-            this.PanelMovable.Size = new System.Drawing.Size(10, 42);
+            this.PanelMovable.Size = new System.Drawing.Size(13, 54);
             this.PanelMovable.TabIndex = 10;
             // 
             // DashBoardBtn
@@ -246,13 +246,13 @@
             this.DashBoardBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.DashBoardBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.DashBoardBtn.FillColor = System.Drawing.Color.Teal;
-            this.DashBoardBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashBoardBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashBoardBtn.ForeColor = System.Drawing.Color.White;
-            this.DashBoardBtn.Location = new System.Drawing.Point(17, 361);
+            this.DashBoardBtn.Location = new System.Drawing.Point(22, 412);
             this.DashBoardBtn.Name = "DashBoardBtn";
-            this.DashBoardBtn.Size = new System.Drawing.Size(212, 44);
+            this.DashBoardBtn.Size = new System.Drawing.Size(244, 54);
             this.DashBoardBtn.TabIndex = 9;
-            this.DashBoardBtn.Text = "DashBoard";
+            this.DashBoardBtn.Text = "   DashBoard";
             this.DashBoardBtn.Click += new System.EventHandler(this.DashBoardBtn_Click);
             // 
             // ReservationBtn
@@ -264,13 +264,13 @@
             this.ReservationBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ReservationBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ReservationBtn.FillColor = System.Drawing.Color.Teal;
-            this.ReservationBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ReservationBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReservationBtn.ForeColor = System.Drawing.Color.White;
-            this.ReservationBtn.Location = new System.Drawing.Point(17, 181);
+            this.ReservationBtn.Location = new System.Drawing.Point(22, 188);
             this.ReservationBtn.Name = "ReservationBtn";
-            this.ReservationBtn.Size = new System.Drawing.Size(212, 44);
+            this.ReservationBtn.Size = new System.Drawing.Size(244, 54);
             this.ReservationBtn.TabIndex = 8;
-            this.ReservationBtn.Text = "Reservations";
+            this.ReservationBtn.Text = "   Reservations";
             this.ReservationBtn.Click += new System.EventHandler(this.ReservationBtn_Click);
             // 
             // SettingsBtn
@@ -282,13 +282,13 @@
             this.SettingsBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.SettingsBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.SettingsBtn.FillColor = System.Drawing.Color.Teal;
-            this.SettingsBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.SettingsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingsBtn.ForeColor = System.Drawing.Color.White;
-            this.SettingsBtn.Location = new System.Drawing.Point(17, 406);
+            this.SettingsBtn.Location = new System.Drawing.Point(22, 468);
             this.SettingsBtn.Name = "SettingsBtn";
-            this.SettingsBtn.Size = new System.Drawing.Size(212, 44);
+            this.SettingsBtn.Size = new System.Drawing.Size(244, 54);
             this.SettingsBtn.TabIndex = 7;
-            this.SettingsBtn.Text = "Settings";
+            this.SettingsBtn.Text = "   Settings";
             this.SettingsBtn.Click += new System.EventHandler(this.SettingsBtn_Click);
             // 
             // DepartmentBtn
@@ -300,13 +300,13 @@
             this.DepartmentBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.DepartmentBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.DepartmentBtn.FillColor = System.Drawing.Color.Teal;
-            this.DepartmentBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepartmentBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepartmentBtn.ForeColor = System.Drawing.Color.White;
-            this.DepartmentBtn.Location = new System.Drawing.Point(17, 271);
+            this.DepartmentBtn.Location = new System.Drawing.Point(22, 300);
             this.DepartmentBtn.Name = "DepartmentBtn";
-            this.DepartmentBtn.Size = new System.Drawing.Size(212, 44);
+            this.DepartmentBtn.Size = new System.Drawing.Size(244, 54);
             this.DepartmentBtn.TabIndex = 6;
-            this.DepartmentBtn.Text = "Department";
+            this.DepartmentBtn.Text = "   Department";
             this.DepartmentBtn.Click += new System.EventHandler(this.DepartmentBtn_Click);
             // 
             // DoctorBtn
@@ -319,13 +319,13 @@
             this.DoctorBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.DoctorBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.DoctorBtn.FillColor = System.Drawing.Color.Teal;
-            this.DoctorBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.DoctorBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorBtn.ForeColor = System.Drawing.Color.White;
-            this.DoctorBtn.Location = new System.Drawing.Point(17, 226);
+            this.DoctorBtn.Location = new System.Drawing.Point(22, 244);
             this.DoctorBtn.Name = "DoctorBtn";
-            this.DoctorBtn.Size = new System.Drawing.Size(212, 44);
+            this.DoctorBtn.Size = new System.Drawing.Size(244, 54);
             this.DoctorBtn.TabIndex = 5;
-            this.DoctorBtn.Text = "Doctors";
+            this.DoctorBtn.Text = "   Doctors";
             this.DoctorBtn.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // PatientBtn
@@ -337,13 +337,13 @@
             this.PatientBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.PatientBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.PatientBtn.FillColor = System.Drawing.Color.Teal;
-            this.PatientBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.PatientBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientBtn.ForeColor = System.Drawing.Color.White;
-            this.PatientBtn.Location = new System.Drawing.Point(17, 316);
+            this.PatientBtn.Location = new System.Drawing.Point(22, 356);
             this.PatientBtn.Name = "PatientBtn";
-            this.PatientBtn.Size = new System.Drawing.Size(212, 44);
+            this.PatientBtn.Size = new System.Drawing.Size(244, 54);
             this.PatientBtn.TabIndex = 4;
-            this.PatientBtn.Text = "Patient";
+            this.PatientBtn.Text = "   Patient";
             this.PatientBtn.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2HtmlLabel1
@@ -351,7 +351,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Teal;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(34, 114);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(53, 123);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 23);
             this.guna2HtmlLabel1.TabIndex = 3;
@@ -361,7 +361,7 @@
             // 
             this.guna2PictureBox1.Image = global::HospitalMangementSystem.Properties.Resources.LOGO;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(45, 3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(64, 12);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(132, 134);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -377,9 +377,9 @@
             this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel1.Controls.Add(this.TopRightPanel);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(224, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(266, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(847, 89);
+            this.guna2Panel1.Size = new System.Drawing.Size(888, 89);
             this.guna2Panel1.TabIndex = 1;
             // 
             // UserNameLabel
@@ -440,7 +440,7 @@
             this.TopRightPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopRightPanel.Location = new System.Drawing.Point(0, 0);
             this.TopRightPanel.Name = "TopRightPanel";
-            this.TopRightPanel.Size = new System.Drawing.Size(847, 39);
+            this.TopRightPanel.Size = new System.Drawing.Size(888, 39);
             this.TopRightPanel.TabIndex = 0;
             // 
             // TimeNow
@@ -460,7 +460,7 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(773, 12);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(814, 12);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(28, 24);
             this.guna2ControlBox2.TabIndex = 4;
@@ -471,7 +471,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(807, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(848, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(28, 24);
             this.guna2ControlBox1.TabIndex = 3;
@@ -498,9 +498,9 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel2.Location = new System.Drawing.Point(224, 571);
+            this.guna2Panel2.Location = new System.Drawing.Point(266, 613);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(847, 31);
+            this.guna2Panel2.Size = new System.Drawing.Size(888, 31);
             this.guna2Panel2.TabIndex = 2;
             // 
             // guna2HtmlLabel2
@@ -519,30 +519,10 @@
             this.MainPanel.Controls.Add(this.reservationsCustomControl1);
             this.MainPanel.Controls.Add(this.SettingsTapCustomControl);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(224, 89);
+            this.MainPanel.Location = new System.Drawing.Point(266, 89);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(847, 482);
+            this.MainPanel.Size = new System.Drawing.Size(888, 524);
             this.MainPanel.TabIndex = 3;
-            // 
-            // reservationsCustomControl1
-            // 
-            this.reservationsCustomControl1.BackColor = System.Drawing.Color.White;
-            this.reservationsCustomControl1.Location = new System.Drawing.Point(0, 0);
-            this.reservationsCustomControl1.Name = "reservationsCustomControl1";
-            this.reservationsCustomControl1.Size = new System.Drawing.Size(847, 482);
-            this.reservationsCustomControl1.TabIndex = 1;
-            // 
-            // SettingsTapCustomControl
-            // 
-            this.SettingsTapCustomControl.BackColor = System.Drawing.Color.White;
-            this.SettingsTapCustomControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SettingsTapCustomControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsTapCustomControl.Location = new System.Drawing.Point(0, 0);
-            this.SettingsTapCustomControl.Margin = new System.Windows.Forms.Padding(5);
-            this.SettingsTapCustomControl.Name = "SettingsTapCustomControl";
-            this.SettingsTapCustomControl.Size = new System.Drawing.Size(847, 482);
-            this.SettingsTapCustomControl.TabIndex = 0;
-            this.SettingsTapCustomControl.Visible = false;
             // 
             // timer1
             // 
@@ -553,11 +533,33 @@
             this.elipseinPanelMovable.BorderRadius = 2;
             this.elipseinPanelMovable.TargetControl = this.PanelMovable;
             // 
+            // reservationsCustomControl1
+            // 
+            this.reservationsCustomControl1._SystemUserName = null;
+            this.reservationsCustomControl1.BackColor = System.Drawing.Color.White;
+            this.reservationsCustomControl1.Location = new System.Drawing.Point(0, -3);
+            this.reservationsCustomControl1.Name = "reservationsCustomControl1";
+            this.reservationsCustomControl1.Size = new System.Drawing.Size(888, 530);
+            this.reservationsCustomControl1.TabIndex = 1;
+            this.reservationsCustomControl1.Load += new System.EventHandler(this.reservationsCustomControl1_Load);
+            // 
+            // SettingsTapCustomControl
+            // 
+            this.SettingsTapCustomControl.BackColor = System.Drawing.Color.White;
+            this.SettingsTapCustomControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SettingsTapCustomControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsTapCustomControl.Location = new System.Drawing.Point(0, 0);
+            this.SettingsTapCustomControl.Margin = new System.Windows.Forms.Padding(5);
+            this.SettingsTapCustomControl.Name = "SettingsTapCustomControl";
+            this.SettingsTapCustomControl.Size = new System.Drawing.Size(888, 524);
+            this.SettingsTapCustomControl.TabIndex = 0;
+            this.SettingsTapCustomControl.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 602);
+            this.ClientSize = new System.Drawing.Size(1154, 644);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
@@ -570,9 +572,9 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReportsImg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DashboardImg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
@@ -623,12 +625,12 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private Guna.UI2.WinForms.Guna2PictureBox DashboardImg;
+        private Guna.UI2.WinForms.Guna2PictureBox SettingsImg;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2Button ReportsBtn;
         private ReservationsCustomControl reservationsCustomControl1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
+        private Guna.UI2.WinForms.Guna2PictureBox ReportsImg;
     }
 }

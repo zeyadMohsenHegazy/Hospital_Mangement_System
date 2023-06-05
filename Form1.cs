@@ -14,13 +14,16 @@ namespace HospitalMangementSystem
     
     public partial class LoginForm : Form
     {
-
+        Main mainform;
+        ReservationsCustomControl reservations;
         HospitalEntities hospitalEntities;
 
         public LoginForm()
         {
             InitializeComponent();
             hospitalEntities = new HospitalEntities();
+            mainform = new Main();
+            reservations = new ReservationsCustomControl();
         }
 
 
@@ -33,12 +36,13 @@ namespace HospitalMangementSystem
                          select z).Count();
             if (Query == 1)
             {
-                Main mainform = new Main();
+
+                #region send user data through the app
                 mainform.UserNameL = UserNameTxt.Text;
                 mainform.Role = PasswordTxt.Text;
-                //ReservationsCustomControl Rcc = new ReservationsCustomControl();
-                //Rcc.GetUserName = UserNameTxt.Text;
-                
+                //reservations._SystemUserName = UserNameTxt.Text;
+                #endregion
+
                 mainform.Show();
                 UserNameTxt.Text = String.Empty;
                 PasswordTxt.Text = String.Empty;

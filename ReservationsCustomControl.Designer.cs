@@ -122,7 +122,7 @@
             this.PhoneTxt.PasswordChar = '\0';
             this.PhoneTxt.PlaceholderText = "";
             this.PhoneTxt.SelectedText = "";
-            this.PhoneTxt.Size = new System.Drawing.Size(200, 36);
+            this.PhoneTxt.Size = new System.Drawing.Size(200, 31);
             this.PhoneTxt.TabIndex = 3;
             // 
             // FNameTxt
@@ -142,7 +142,7 @@
             this.FNameTxt.PasswordChar = '\0';
             this.FNameTxt.PlaceholderText = "";
             this.FNameTxt.SelectedText = "";
-            this.FNameTxt.Size = new System.Drawing.Size(200, 36);
+            this.FNameTxt.Size = new System.Drawing.Size(200, 31);
             this.FNameTxt.TabIndex = 0;
             // 
             // guna2HtmlLabel2
@@ -234,7 +234,7 @@
             this.LNameTxt.PasswordChar = '\0';
             this.LNameTxt.PlaceholderText = "";
             this.LNameTxt.SelectedText = "";
-            this.LNameTxt.Size = new System.Drawing.Size(200, 36);
+            this.LNameTxt.Size = new System.Drawing.Size(200, 32);
             this.LNameTxt.TabIndex = 1;
             // 
             // AgeTxt
@@ -254,7 +254,7 @@
             this.AgeTxt.PasswordChar = '\0';
             this.AgeTxt.PlaceholderText = "";
             this.AgeTxt.SelectedText = "";
-            this.AgeTxt.Size = new System.Drawing.Size(200, 36);
+            this.AgeTxt.Size = new System.Drawing.Size(200, 31);
             this.AgeTxt.TabIndex = 2;
             // 
             // EmailTxt
@@ -274,7 +274,7 @@
             this.EmailTxt.PasswordChar = '\0';
             this.EmailTxt.PlaceholderText = "";
             this.EmailTxt.SelectedText = "";
-            this.EmailTxt.Size = new System.Drawing.Size(200, 36);
+            this.EmailTxt.Size = new System.Drawing.Size(200, 32);
             this.EmailTxt.TabIndex = 4;
             // 
             // guna2HtmlLabel5
@@ -332,9 +332,9 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.guna2Panel1.Controls.Add(this.ReservationAmountLable);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2Panel1.Location = new System.Drawing.Point(17, 406);
+            this.guna2Panel1.Location = new System.Drawing.Point(15, 406);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(401, 37);
+            this.guna2Panel1.Size = new System.Drawing.Size(403, 37);
             this.guna2Panel1.TabIndex = 30;
             // 
             // guna2HtmlLabel9

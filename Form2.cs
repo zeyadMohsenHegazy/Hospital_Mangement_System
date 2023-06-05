@@ -47,8 +47,13 @@ namespace HospitalMangementSystem
                     if (item.role == "receptionist")
                     {
                         DashBoardBtn.Visible = false;
+                        DashboardImg.Visible = false;
+
                         SettingsBtn.Visible = false;
+                        SettingsImg.Visible = false;
+
                         ReportsBtn.Visible = false;
+                        ReportsImg.Visible = false;
                     }
                 }
             }
@@ -79,6 +84,7 @@ namespace HospitalMangementSystem
         {
             movepanel(DashBoardBtn);
             reservationsCustomControl1.Visible = false;
+            SettingsTapCustomControl.Visible = false;
 
         }
 
@@ -107,6 +113,10 @@ namespace HospitalMangementSystem
 
         }
 
-
+        private void reservationsCustomControl1_Load(object sender, EventArgs e)
+        {
+            ReservationsCustomControl reservations = new ReservationsCustomControl();
+            reservations._SystemUserName = UserNameLabel.Text;
+        }
     }
 }

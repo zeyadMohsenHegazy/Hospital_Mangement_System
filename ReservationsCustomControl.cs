@@ -18,10 +18,7 @@ namespace HospitalMangementSystem
         int ResrvationAmountMoney;
         int DoctorId;
         int DepartID;
-        public string GetUserName { get; set; }
-        public int UserIDs;
-        public int PatientIDs;
-        public string PatientFirstName;
+        public string _SystemUserName { get; set; }
         public ReservationsCustomControl()
         {
             InitializeComponent();
@@ -54,7 +51,6 @@ namespace HospitalMangementSystem
         {
             #region patients table informantions
             string PatientFName = FNameTxt.Text.Trim();
-            PatientFirstName = PatientFName;
             string PatientLName = LNameTxt.Text.Trim();
             int PatientAge = int.Parse(AgeTxt.Text);
             string Patientphone = PhoneTxt.Text.Trim();
@@ -76,8 +72,8 @@ namespace HospitalMangementSystem
 
             DateTime PatientExaminDate = ReservationDateTimePicker.Value.Date;
             int DepartmentID = GetDepartmentID(DepartmentName);
-
-            
+            int _PatientID = GetPatientIdBasedInFirstName();
+            int _UserID = GetUserIdBasedInUserName();
             #endregion
 
 
@@ -97,18 +93,15 @@ namespace HospitalMangementSystem
             });
 
             //to get userID
-            int CurrentUserID = GetUserIdBasedInUserName(GetUserName);
-            MessageBox.Show(GetUserName);
-            MessageBox.Show(PatientFName);
+            
             //to get pateintID
-            int CurrentPatientIDs = GetPatientIdBasedInFirstName(PatientFName);
             //insert into table reservations
             hospital.Reservations.Add(new Reservation() 
             {   PaymentMethod = "cash",
                 ReservationPrice = ResrvationAmountMoney,
                 MeetTime = PatientExaminDate,
-                UserID = 1,
-                PatientID = 1,
+                UserID = _UserID,
+                PatientID = _PatientID,
                 DoctorID = DoctorId,
                 DepartmentID = DepartmentID
             });
@@ -172,22 +165,36 @@ namespace HospitalMangementSystem
             DoctorNameListBox.DataSource = MachingDoctors.ToList();
         }
     
-        public int GetUserIdBasedInUserName(string GetUserName)
+        public int GetUserIdBasedInUserName()
         {
-            var MachingUser = from User in hospital.Users
-                              where User.UserName == GetUserName
-                              select User;
-            int _UserID = MachingUser.FirstOrDefault().ID;
-            return _UserID;
+            var Users = hospital.Users.ToList();
+            foreach(var user in Users)
+            {
+                if(user.UserName == _SystemUserName)
+                {
+                    return user.ID;
+                }
+            }
+            return 1;
         }
     
-        public int GetPatientIdBasedInFirstName(string PatientFirstName)
+        public int GetPatientIdBasedInFirstName()
         {
-            var MachinPatient = from Patien in hospital.Patiens
-                                where Patien.FirstName == PatientFirstName
-                                select Patien;
-            int PatientID = MachinPatient.LastOrDefault().ID;
-            return PatientID;
+            var patients = hospital.Patiens.ToList();
+            if (patients.Count == 0)
+            {
+                return 1; 
+            }
+            else
+            {
+                int lastPatientId = patients.Last().ID; 
+                return lastPatientId + 1; 
+            }
         }
+
+        //var MachingUser = from User in hospital.Users
+        //                  where User.UserName == _SystemUserName
+        //                  select User;
+        //int _UserID = MachingUser.FirstOrDefault().ID;
     }
 }
