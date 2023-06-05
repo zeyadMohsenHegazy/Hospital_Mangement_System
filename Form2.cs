@@ -39,8 +39,6 @@ namespace HospitalMangementSystem
 
         private void Main_Load(object sender, EventArgs e)
         {
-            ReservationsCustomControl RCC = new ReservationsCustomControl();
-            RCC.GetUserName = UserNameL;
             var users = hospital.Users;
             foreach(var item in users)
             {
@@ -109,6 +107,6 @@ namespace HospitalMangementSystem
 
         }
 
-        
+
     }
 }

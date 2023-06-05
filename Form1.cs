@@ -16,6 +16,7 @@ namespace HospitalMangementSystem
     {
 
         HospitalEntities hospitalEntities;
+
         public LoginForm()
         {
             InitializeComponent();
@@ -35,6 +36,9 @@ namespace HospitalMangementSystem
                 Main mainform = new Main();
                 mainform.UserNameL = UserNameTxt.Text;
                 mainform.Role = PasswordTxt.Text;
+                //ReservationsCustomControl Rcc = new ReservationsCustomControl();
+                //Rcc.GetUserName = UserNameTxt.Text;
+                
                 mainform.Show();
                 UserNameTxt.Text = String.Empty;
                 PasswordTxt.Text = String.Empty;

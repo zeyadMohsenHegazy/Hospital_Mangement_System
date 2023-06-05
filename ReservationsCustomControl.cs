@@ -18,20 +18,20 @@ namespace HospitalMangementSystem
         int ResrvationAmountMoney;
         int DoctorId;
         int DepartID;
-        public string GetUserName;
-        int UserIDs;
+        public string GetUserName { get; set; }
+        public int UserIDs;
+        public int PatientIDs;
+        public string PatientFirstName;
         public ReservationsCustomControl()
         {
             InitializeComponent();
             hospital = new HospitalEntities();
-
             DepatmentsAndDepartmentsId.Add(1003, "dental");
             DepatmentsAndDepartmentsId.Add(1004, "surgery");
             DepatmentsAndDepartmentsId.Add(1005, "pediatric");
             DepatmentsAndDepartmentsId.Add(1006, "neurology");
             DepatmentsAndDepartmentsId.Add(1007, "gynecology");
             DepatmentsAndDepartmentsId.Add(1008, "orthopedic");
-
         }
 
 
@@ -54,6 +54,7 @@ namespace HospitalMangementSystem
         {
             #region patients table informantions
             string PatientFName = FNameTxt.Text.Trim();
+            PatientFirstName = PatientFName;
             string PatientLName = LNameTxt.Text.Trim();
             int PatientAge = int.Parse(AgeTxt.Text);
             string Patientphone = PhoneTxt.Text.Trim();
@@ -76,12 +77,13 @@ namespace HospitalMangementSystem
             DateTime PatientExaminDate = ReservationDateTimePicker.Value.Date;
             int DepartmentID = GetDepartmentID(DepartmentName);
 
+            
             #endregion
 
 
             #region dealing with the data base (reservations table and patient table)
-            
-            
+
+
             //insert into table patient
             hospital.Patiens.Add(new Patien()
             {
@@ -94,13 +96,18 @@ namespace HospitalMangementSystem
                 email = PatientEmail
             });
 
-
+            //to get userID
+            int CurrentUserID = GetUserIdBasedInUserName(GetUserName);
+            MessageBox.Show(GetUserName);
+            MessageBox.Show(PatientFName);
+            //to get pateintID
+            int CurrentPatientIDs = GetPatientIdBasedInFirstName(PatientFName);
             //insert into table reservations
             hospital.Reservations.Add(new Reservation() 
             {   PaymentMethod = "cash",
                 ReservationPrice = ResrvationAmountMoney,
                 MeetTime = PatientExaminDate,
-                UserID = UserIDs,
+                UserID = 1,
                 PatientID = 1,
                 DoctorID = DoctorId,
                 DepartmentID = DepartmentID
@@ -165,15 +172,22 @@ namespace HospitalMangementSystem
             DoctorNameListBox.DataSource = MachingDoctors.ToList();
         }
     
-        public int GetUserIdBasedInUserName(string userName)
+        public int GetUserIdBasedInUserName(string GetUserName)
         {
             var MachingUser = from User in hospital.Users
-                                 where User.UserName == GetUserName
-                                    select User;
-            UserIDs = MachingUser.FirstOrDefault().ID;
-            return UserIDs;
+                              where User.UserName == GetUserName
+                              select User;
+            int _UserID = MachingUser.FirstOrDefault().ID;
+            return _UserID;
         }
     
-        //public int GetPatientId
+        public int GetPatientIdBasedInFirstName(string PatientFirstName)
+        {
+            var MachinPatient = from Patien in hospital.Patiens
+                                where Patien.FirstName == PatientFirstName
+                                select Patien;
+            int PatientID = MachinPatient.LastOrDefault().ID;
+            return PatientID;
+        }
     }
 }
