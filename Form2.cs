@@ -32,6 +32,8 @@ namespace HospitalMangementSystem
             SettingsTapCustomControl.Visible = false;
             PatientCustomControl.Visible = true;
             doctorCustomConrol1.Visible = false;
+            departmentCustomControl1.Visible = false;
+
 
         }
 
@@ -69,14 +71,20 @@ namespace HospitalMangementSystem
             movepanel(DoctorBtn);
             reservationsCustomControl1.Visible = false;
             doctorCustomConrol1.Visible = true;
+            reports_Charts1.Visible = false;
+            departmentCustomControl1.Visible = false;
+
+
         }
 
         private void DepartmentBtn_Click(object sender, EventArgs e)
         {
             movepanel(DepartmentBtn);
+            departmentCustomControl1.Visible = true;
             reservationsCustomControl1.Visible = false;
             doctorCustomConrol1.Visible = false;
             PatientCustomControl.Visible = false;
+            reports_Charts1.Visible = false;
 
         }
 
@@ -86,6 +94,9 @@ namespace HospitalMangementSystem
             reservationsCustomControl1.Visible = true;
             doctorCustomConrol1.Visible = false;
             PatientCustomControl.Visible = false;
+            reports_Charts1.Visible = false;
+            departmentCustomControl1.Visible = false;
+
 
         }
 
@@ -96,6 +107,9 @@ namespace HospitalMangementSystem
             SettingsTapCustomControl.Visible = false;
             doctorCustomConrol1.Visible = false;
             PatientCustomControl.Visible = false;
+            reports_Charts1.Visible = false;
+            departmentCustomControl1.Visible = false;
+
 
 
         }
@@ -107,6 +121,9 @@ namespace HospitalMangementSystem
             reservationsCustomControl1.Visible = false;
             doctorCustomConrol1.Visible = false;
             PatientCustomControl.Visible = false;
+            reports_Charts1.Visible = false;
+            departmentCustomControl1.Visible = false;
+
 
 
         }
@@ -128,6 +145,8 @@ namespace HospitalMangementSystem
             SettingsTapCustomControl.Visible = false;
             doctorCustomConrol1.Visible = false;
             PatientCustomControl.Visible = false;
+            reports_Charts1.Visible = true;
+            departmentCustomControl1.Visible = false;
 
         }
 

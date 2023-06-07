@@ -48,32 +48,53 @@ namespace HospitalMangementSystem
             //    }
             //}
             #endregion
-            var panels = Controls.OfType<Panel>();
+            #region MyRegion
 
-            foreach (var panel in panels)
+            //var panels = Controls.OfType<Panel>();
+
+            //foreach (var panel in panels)
+            //{
+            //    string name = panel.Name;
+            //    string status = panel.Controls.OfType<RadioButton>().SingleOrDefault(rb => rb.Checked)?.Name.Substring(2);
+            //    //var checkedRadioButtons = panel.Controls.OfType<RadioButton>().Where(rb => rb.Checked);
+
+
+            //    //foreach (var radioButton in checkedRadioButtons)
+            //    //{
+            //    //    string status = radioButton.Name;
+            //    //}
+
+            //    var department = hospital.Departments.FirstOrDefault(d => d.Name == name);
+            //        if (department == null)
+            //        {
+            //            hospital.Departments.Add(department);
+            //        }
+            //        else if (department.Status != status)
+            //        {
+            //            department.Status = status;
+            //        }
+            //        hospital.SaveChanges();
+
+            //} 
+            #endregion
+
+            foreach (var panel in Controls.OfType<Panel>())
             {
                 string name = panel.Name;
-                string status = panel.Controls.OfType<RadioButton>().SingleOrDefault(rb => rb.Checked)?.Name.Substring(2);
-               //var checkedRadioButtons = panel.Controls.OfType<RadioButton>().Where(rb => rb.Checked);
+                RadioButton checkedRadioButton = panel.Controls.OfType<RadioButton>().SingleOrDefault(rb => rb.Checked);
+                string status = checkedRadioButton != null ? checkedRadioButton.Name.Substring(2) : null;
 
-
-                //foreach (var radioButton in checkedRadioButtons)
-                //{
-                //    string status = radioButton.Name;
-                //}
-
+                var department = hospital.Departments.FirstOrDefault(d => d.Name == name);
+                if (department == null)
                 {
-                    var department = hospital.Departments.FirstOrDefault(d => d.Name == name);
-                    if (department == null)
-                    {
-                        hospital.Departments.Add(department);
-                    }
-                    else if (department.Status != status)
-                    {
-                        department.Status = status;
-                    }
-                    hospital.SaveChanges();
+                    department = new Department { Name = name, Status = status };
+                    hospital.Departments.Add(department);
                 }
+                else if (status != null && department.Status != status)
+                {
+                    department.Status = status;
+                }
+                hospital.SaveChanges();
             }
 
         }

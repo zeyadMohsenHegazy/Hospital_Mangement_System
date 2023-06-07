@@ -66,11 +66,12 @@
             this.MainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.elipseinPanelMovable = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.reports_Charts1 = new HospitalMangementSystem.Reports_ChartsCustomControl();
+            this.departmentCustomControl1 = new HospitalMangementSystem.DepartmentCustomControl();
             this.doctorCustomConrol1 = new HospitalMangementSystem.DoctorCustomConrol();
             this.PatientCustomControl = new HospitalMangementSystem.Patient();
             this.reservationsCustomControl1 = new HospitalMangementSystem.ReservationsCustomControl();
             this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
-            this.departmentCustomControl1 = new HospitalMangementSystem.DepartmentCustomControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ReportsImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardImg)).BeginInit();
@@ -519,6 +520,7 @@
             // 
             // MainPanel
             // 
+            this.MainPanel.Controls.Add(this.reports_Charts1);
             this.MainPanel.Controls.Add(this.departmentCustomControl1);
             this.MainPanel.Controls.Add(this.doctorCustomConrol1);
             this.MainPanel.Controls.Add(this.PatientCustomControl);
@@ -538,6 +540,26 @@
             // 
             this.elipseinPanelMovable.BorderRadius = 2;
             this.elipseinPanelMovable.TargetControl = this.PanelMovable;
+            // 
+            // reports_Charts1
+            // 
+            this.reports_Charts1.BackColor = System.Drawing.Color.White;
+            this.reports_Charts1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reports_Charts1.Location = new System.Drawing.Point(0, 0);
+            this.reports_Charts1.Name = "reports_Charts1";
+            this.reports_Charts1.Size = new System.Drawing.Size(888, 524);
+            this.reports_Charts1.TabIndex = 5;
+            this.reports_Charts1.Visible = false;
+            // 
+            // departmentCustomControl1
+            // 
+            this.departmentCustomControl1.BackColor = System.Drawing.Color.White;
+            this.departmentCustomControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.departmentCustomControl1.Location = new System.Drawing.Point(0, 0);
+            this.departmentCustomControl1.Name = "departmentCustomControl1";
+            this.departmentCustomControl1.Size = new System.Drawing.Size(888, 524);
+            this.departmentCustomControl1.TabIndex = 4;
+            this.departmentCustomControl1.Visible = false;
             // 
             // doctorCustomConrol1
             // 
@@ -580,15 +602,6 @@
             this.SettingsTapCustomControl.Size = new System.Drawing.Size(888, 524);
             this.SettingsTapCustomControl.TabIndex = 0;
             this.SettingsTapCustomControl.Visible = false;
-            // 
-            // departmentCustomControl1
-            // 
-            this.departmentCustomControl1.BackColor = System.Drawing.Color.White;
-            this.departmentCustomControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.departmentCustomControl1.Location = new System.Drawing.Point(0, 0);
-            this.departmentCustomControl1.Name = "departmentCustomControl1";
-            this.departmentCustomControl1.Size = new System.Drawing.Size(888, 524);
-            this.departmentCustomControl1.TabIndex = 4;
             // 
             // Main
             // 
@@ -670,5 +683,6 @@
         private Patient PatientCustomControl;
         private DoctorCustomConrol doctorCustomConrol1;
         private DepartmentCustomControl departmentCustomControl1;
+        private Reports_ChartsCustomControl reports_Charts1;
     }
 }

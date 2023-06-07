@@ -85,7 +85,7 @@
             this.orthopedic.Controls.Add(this.rb5busy);
             this.orthopedic.CustomBorderColor = System.Drawing.Color.Gray;
             this.orthopedic.CustomBorderThickness = new System.Windows.Forms.Padding(5);
-            this.orthopedic.Location = new System.Drawing.Point(332, 242);
+            this.orthopedic.Location = new System.Drawing.Point(343, 242);
             this.orthopedic.Margin = new System.Windows.Forms.Padding(2);
             this.orthopedic.Name = "orthopedic";
             this.orthopedic.Size = new System.Drawing.Size(140, 140);
@@ -169,7 +169,7 @@
             this.gynecology.Controls.Add(this.rb6busy);
             this.gynecology.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gynecology.CustomBorderThickness = new System.Windows.Forms.Padding(5);
-            this.gynecology.Location = new System.Drawing.Point(511, 242);
+            this.gynecology.Location = new System.Drawing.Point(522, 242);
             this.gynecology.Margin = new System.Windows.Forms.Padding(2);
             this.gynecology.Name = "gynecology";
             this.gynecology.Size = new System.Drawing.Size(140, 140);
@@ -253,7 +253,7 @@
             this.neurology.Controls.Add(this.rb4busy);
             this.neurology.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.neurology.CustomBorderThickness = new System.Windows.Forms.Padding(5);
-            this.neurology.Location = new System.Drawing.Point(155, 242);
+            this.neurology.Location = new System.Drawing.Point(166, 242);
             this.neurology.Margin = new System.Windows.Forms.Padding(2);
             this.neurology.Name = "neurology";
             this.neurology.Size = new System.Drawing.Size(140, 140);
@@ -337,7 +337,7 @@
             this.surgery.Controls.Add(this.rb3busy);
             this.surgery.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.surgery.CustomBorderThickness = new System.Windows.Forms.Padding(5);
-            this.surgery.Location = new System.Drawing.Point(511, 76);
+            this.surgery.Location = new System.Drawing.Point(522, 76);
             this.surgery.Margin = new System.Windows.Forms.Padding(2);
             this.surgery.Name = "surgery";
             this.surgery.Size = new System.Drawing.Size(140, 140);
@@ -421,7 +421,7 @@
             this.dental.Controls.Add(this.rb2busy);
             this.dental.CustomBorderColor = System.Drawing.Color.Gray;
             this.dental.CustomBorderThickness = new System.Windows.Forms.Padding(5);
-            this.dental.Location = new System.Drawing.Point(332, 76);
+            this.dental.Location = new System.Drawing.Point(343, 76);
             this.dental.Margin = new System.Windows.Forms.Padding(2);
             this.dental.Name = "dental";
             this.dental.Size = new System.Drawing.Size(140, 140);
@@ -505,7 +505,7 @@
             this.pediatric.Controls.Add(this.guna2HtmlLabel2);
             this.pediatric.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pediatric.CustomBorderThickness = new System.Windows.Forms.Padding(5);
-            this.pediatric.Location = new System.Drawing.Point(155, 76);
+            this.pediatric.Location = new System.Drawing.Point(166, 76);
             this.pediatric.Margin = new System.Windows.Forms.Padding(2);
             this.pediatric.Name = "pediatric";
             this.pediatric.Size = new System.Drawing.Size(140, 140);
@@ -591,7 +591,7 @@
             this.AddNewUserBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.AddNewUserBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.AddNewUserBtn.ForeColor = System.Drawing.Color.White;
-            this.AddNewUserBtn.Location = new System.Drawing.Point(333, 413);
+            this.AddNewUserBtn.Location = new System.Drawing.Point(317, 413);
             this.AddNewUserBtn.Name = "AddNewUserBtn";
             this.AddNewUserBtn.Size = new System.Drawing.Size(180, 45);
             this.AddNewUserBtn.TabIndex = 21;
@@ -603,11 +603,11 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(377, 25);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(333, 23);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(93, 31);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(148, 31);
             this.guna2HtmlLabel1.TabIndex = 20;
-            this.guna2HtmlLabel1.Text = "Doctors";
+            this.guna2HtmlLabel1.Text = "Departments";
             // 
             // DepartmentCustomControl
             // 
