@@ -24,8 +24,7 @@ namespace HospitalMangementSystem
             string firstName = FirstNameTxt.Text;
             string lastName = LastNameTxt.Text;
             string Phone = PhoneTxt.Text;
-            /*p.FirstName == firstName && p.LastName == lastName) ||*/
-            var data = hospital.Patiens.Where(p => p.phone == Phone).FirstOrDefault();
+            var data = hospital.Patiens.Where(p => (p.FirstName == firstName && p.LastName == lastName) || p.phone == Phone).FirstOrDefault();
             IDTxt.Text = data.ID.ToString();
             label1.Text = data.FirstName;
             label2.Text = data.LastName;
@@ -34,11 +33,20 @@ namespace HospitalMangementSystem
             label5.Text = data.BloodType;
             label6.Text = data.phone;
             label7.Text = data.email;
+
+            Clear();
         }
 
         private void Patient_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void Clear()
+        {
+            FirstNameTxt.Text = string.Empty;
+            LastNameTxt.Text = string.Empty;
+            PhoneTxt.Text = string.Empty;
         }
     }
 }

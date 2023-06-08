@@ -91,7 +91,7 @@ namespace HospitalMangementSystem
                 phone = Patientphone,
                 email = PatientEmail
             });
-
+            hospital.SaveChanges();
             //to get userID
             
             //to get pateintID
@@ -187,7 +187,7 @@ namespace HospitalMangementSystem
             }
             else
             {
-                int lastPatientId = patients.Last().ID; 
+                int lastPatientId = patients.LastOrDefault().ID; 
                 return lastPatientId + 1; 
             }
         }

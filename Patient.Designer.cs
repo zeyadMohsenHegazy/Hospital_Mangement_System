@@ -505,7 +505,6 @@
             this.Controls.Add(this.t);
             this.Name = "Patient";
             this.Size = new System.Drawing.Size(888, 524);
-            this.Load += new System.EventHandler(this.Patient_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
