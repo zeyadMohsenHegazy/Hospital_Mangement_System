@@ -33,6 +33,7 @@ namespace HospitalMangementSystem
             PatientCustomControl.Visible = true;
             doctorCustomConrol1.Visible = false;
             departmentCustomControl1.Visible = false;
+            DashBoardCustomControl.Visible = false;
 
 
         }
@@ -73,6 +74,7 @@ namespace HospitalMangementSystem
             doctorCustomConrol1.Visible = true;
             reports_Charts1.Visible = false;
             departmentCustomControl1.Visible = false;
+            DashBoardCustomControl.Visible = false;
 
 
         }
@@ -85,6 +87,7 @@ namespace HospitalMangementSystem
             doctorCustomConrol1.Visible = false;
             PatientCustomControl.Visible = false;
             reports_Charts1.Visible = false;
+            DashBoardCustomControl.Visible = false;
 
         }
 
@@ -96,6 +99,7 @@ namespace HospitalMangementSystem
             PatientCustomControl.Visible = false;
             reports_Charts1.Visible = false;
             departmentCustomControl1.Visible = false;
+            DashBoardCustomControl.Visible = false;
 
 
         }
@@ -109,8 +113,7 @@ namespace HospitalMangementSystem
             PatientCustomControl.Visible = false;
             reports_Charts1.Visible = false;
             departmentCustomControl1.Visible = false;
-
-
+            DashBoardCustomControl.Visible = true;
 
         }
 
@@ -123,6 +126,7 @@ namespace HospitalMangementSystem
             PatientCustomControl.Visible = false;
             reports_Charts1.Visible = false;
             departmentCustomControl1.Visible = false;
+            DashBoardCustomControl.Visible = false;
 
 
 
@@ -147,6 +151,7 @@ namespace HospitalMangementSystem
             PatientCustomControl.Visible = false;
             reports_Charts1.Visible = true;
             departmentCustomControl1.Visible = false;
+            DashBoardCustomControl.Visible = false;
 
         }
 
