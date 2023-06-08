@@ -65,7 +65,7 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(15, 269);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(15, 281);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(151, 26);
             this.guna2HtmlLabel8.TabIndex = 17;
@@ -80,7 +80,7 @@
             this.GenderListBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.GenderListBox.Location = new System.Drawing.Point(621, 72);
+            this.GenderListBox.Location = new System.Drawing.Point(654, 82);
             this.GenderListBox.Name = "GenderListBox";
             this.GenderListBox.Size = new System.Drawing.Size(200, 28);
             this.GenderListBox.TabIndex = 5;
@@ -98,7 +98,7 @@
             this.AddNewUserBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.AddNewUserBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.AddNewUserBtn.ForeColor = System.Drawing.Color.White;
-            this.AddNewUserBtn.Location = new System.Drawing.Point(548, 402);
+            this.AddNewUserBtn.Location = new System.Drawing.Point(577, 433);
             this.AddNewUserBtn.Name = "AddNewUserBtn";
             this.AddNewUserBtn.Size = new System.Drawing.Size(180, 45);
             this.AddNewUserBtn.TabIndex = 11;
@@ -116,7 +116,7 @@
             this.PhoneTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PhoneTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PhoneTxt.Location = new System.Drawing.Point(211, 264);
+            this.PhoneTxt.Location = new System.Drawing.Point(211, 276);
             this.PhoneTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PhoneTxt.Name = "PhoneTxt";
             this.PhoneTxt.PasswordChar = '\0';
@@ -136,7 +136,7 @@
             this.FNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.FNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.FNameTxt.Location = new System.Drawing.Point(211, 69);
+            this.FNameTxt.Location = new System.Drawing.Point(211, 81);
             this.FNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FNameTxt.Name = "FNameTxt";
             this.FNameTxt.PasswordChar = '\0';
@@ -150,7 +150,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(15, 204);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(15, 216);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(126, 26);
             this.guna2HtmlLabel2.TabIndex = 12;
@@ -162,7 +162,7 @@
             this.t.BackColor = System.Drawing.Color.Transparent;
             this.t.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.t.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.t.Location = new System.Drawing.Point(15, 75);
+            this.t.Location = new System.Drawing.Point(15, 87);
             this.t.Name = "t";
             this.t.Size = new System.Drawing.Size(194, 26);
             this.t.TabIndex = 12;
@@ -186,7 +186,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 140);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 152);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(193, 26);
             this.guna2HtmlLabel1.TabIndex = 13;
@@ -198,7 +198,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(421, 74);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(454, 84);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(160, 26);
             this.guna2HtmlLabel3.TabIndex = 20;
@@ -210,7 +210,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(15, 335);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(15, 347);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(141, 26);
             this.guna2HtmlLabel4.TabIndex = 21;
@@ -228,7 +228,7 @@
             this.LNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.LNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LNameTxt.Location = new System.Drawing.Point(211, 134);
+            this.LNameTxt.Location = new System.Drawing.Point(211, 146);
             this.LNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LNameTxt.Name = "LNameTxt";
             this.LNameTxt.PasswordChar = '\0';
@@ -248,7 +248,7 @@
             this.AgeTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.AgeTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgeTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.AgeTxt.Location = new System.Drawing.Point(211, 199);
+            this.AgeTxt.Location = new System.Drawing.Point(211, 211);
             this.AgeTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AgeTxt.Name = "AgeTxt";
             this.AgeTxt.PasswordChar = '\0';
@@ -268,7 +268,7 @@
             this.EmailTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EmailTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.EmailTxt.Location = new System.Drawing.Point(211, 329);
+            this.EmailTxt.Location = new System.Drawing.Point(211, 341);
             this.EmailTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EmailTxt.Name = "EmailTxt";
             this.EmailTxt.PasswordChar = '\0';
@@ -282,7 +282,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(421, 176);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(454, 198);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(187, 26);
             this.guna2HtmlLabel5.TabIndex = 26;
@@ -297,7 +297,7 @@
             this.ReservationListBox.Items.AddRange(new object[] {
             "Normal",
             "Urgent "});
-            this.ReservationListBox.Location = new System.Drawing.Point(621, 174);
+            this.ReservationListBox.Location = new System.Drawing.Point(654, 196);
             this.ReservationListBox.Name = "ReservationListBox";
             this.ReservationListBox.Size = new System.Drawing.Size(200, 28);
             this.ReservationListBox.TabIndex = 7;
@@ -332,7 +332,7 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.guna2Panel1.Controls.Add(this.ReservationAmountLable);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2Panel1.Location = new System.Drawing.Point(15, 406);
+            this.guna2Panel1.Location = new System.Drawing.Point(15, 437);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(403, 37);
             this.guna2Panel1.TabIndex = 30;
@@ -342,7 +342,7 @@
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(421, 125);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(454, 141);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(200, 26);
             this.guna2HtmlLabel9.TabIndex = 31;
@@ -364,7 +364,7 @@
             "AB+",
             "O",
             "O-"});
-            this.BloodTypeListBox.Location = new System.Drawing.Point(621, 123);
+            this.BloodTypeListBox.Location = new System.Drawing.Point(654, 139);
             this.BloodTypeListBox.Name = "BloodTypeListBox";
             this.BloodTypeListBox.Size = new System.Drawing.Size(200, 28);
             this.BloodTypeListBox.TabIndex = 6;
@@ -374,7 +374,7 @@
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(421, 278);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(454, 312);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(141, 26);
             this.guna2HtmlLabel10.TabIndex = 33;
@@ -393,7 +393,7 @@
             "neurology",
             "gynecology",
             "orthopedic"});
-            this.DepartmentNameListBox.Location = new System.Drawing.Point(621, 225);
+            this.DepartmentNameListBox.Location = new System.Drawing.Point(654, 253);
             this.DepartmentNameListBox.Name = "DepartmentNameListBox";
             this.DepartmentNameListBox.Size = new System.Drawing.Size(200, 28);
             this.DepartmentNameListBox.TabIndex = 8;
@@ -404,7 +404,7 @@
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(421, 227);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(454, 255);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(191, 26);
             this.guna2HtmlLabel11.TabIndex = 35;
@@ -418,7 +418,7 @@
             this.DoctorNameListBox.ItemHeight = 24;
             this.DoctorNameListBox.Items.AddRange(new object[] {
             "Dr:"});
-            this.DoctorNameListBox.Location = new System.Drawing.Point(621, 276);
+            this.DoctorNameListBox.Location = new System.Drawing.Point(654, 310);
             this.DoctorNameListBox.Name = "DoctorNameListBox";
             this.DoctorNameListBox.Size = new System.Drawing.Size(200, 28);
             this.DoctorNameListBox.TabIndex = 9;
@@ -428,7 +428,7 @@
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(425, 329);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(458, 369);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             this.guna2HtmlLabel12.Size = new System.Drawing.Size(187, 26);
             this.guna2HtmlLabel12.TabIndex = 37;
@@ -442,7 +442,7 @@
             this.ReservationDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ReservationDateTimePicker.ForeColor = System.Drawing.Color.White;
             this.ReservationDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.ReservationDateTimePicker.Location = new System.Drawing.Point(621, 329);
+            this.ReservationDateTimePicker.Location = new System.Drawing.Point(654, 367);
             this.ReservationDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.ReservationDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.ReservationDateTimePicker.Name = "ReservationDateTimePicker";
@@ -492,7 +492,7 @@
             this.Controls.Add(this.t);
             this.Controls.Add(this.MakeResrvationTXT);
             this.Name = "ReservationsCustomControl";
-            this.Size = new System.Drawing.Size(847, 482);
+            this.Size = new System.Drawing.Size(888, 524);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

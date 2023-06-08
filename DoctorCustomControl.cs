@@ -53,5 +53,7 @@ namespace HospitalMangementSystem
                 label4.Text = "";
             }
         }
+
+       
     }
 }

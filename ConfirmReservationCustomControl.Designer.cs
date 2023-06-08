@@ -56,7 +56,7 @@
             this.AddNewUserBtn.Animated = true;
             this.AddNewUserBtn.AutoRoundedCorners = true;
             this.AddNewUserBtn.BorderColor = System.Drawing.Color.White;
-            this.AddNewUserBtn.BorderRadius = 18;
+            this.AddNewUserBtn.BorderRadius = 5;
             this.AddNewUserBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.AddNewUserBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.AddNewUserBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -191,7 +191,7 @@
             this.Btn1.Animated = true;
             this.Btn1.AutoRoundedCorners = true;
             this.Btn1.BorderColor = System.Drawing.Color.White;
-            this.Btn1.BorderRadius = 5;
+            this.Btn1.BorderRadius = 34;
             this.Btn1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -222,7 +222,7 @@
             this.Btn2.Animated = true;
             this.Btn2.AutoRoundedCorners = true;
             this.Btn2.BorderColor = System.Drawing.Color.White;
-            this.Btn2.BorderRadius = 5;
+            this.Btn2.BorderRadius = 34;
             this.Btn2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -242,7 +242,7 @@
             this.Btn3.Animated = true;
             this.Btn3.AutoRoundedCorners = true;
             this.Btn3.BorderColor = System.Drawing.Color.White;
-            this.Btn3.BorderRadius = 5;
+            this.Btn3.BorderRadius = 34;
             this.Btn3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -262,7 +262,7 @@
             this.Btn4.Animated = true;
             this.Btn4.AutoRoundedCorners = true;
             this.Btn4.BorderColor = System.Drawing.Color.White;
-            this.Btn4.BorderRadius = 5;
+            this.Btn4.BorderRadius = 34;
             this.Btn4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -282,7 +282,7 @@
             this.Btn5.Animated = true;
             this.Btn5.AutoRoundedCorners = true;
             this.Btn5.BorderColor = System.Drawing.Color.White;
-            this.Btn5.BorderRadius = 5;
+            this.Btn5.BorderRadius = 34;
             this.Btn5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -302,7 +302,7 @@
             this.Btn6.Animated = true;
             this.Btn6.AutoRoundedCorners = true;
             this.Btn6.BorderColor = System.Drawing.Color.White;
-            this.Btn6.BorderRadius = 5;
+            this.Btn6.BorderRadius = 34;
             this.Btn6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -322,7 +322,7 @@
             this.Btn7.Animated = true;
             this.Btn7.AutoRoundedCorners = true;
             this.Btn7.BorderColor = System.Drawing.Color.White;
-            this.Btn7.BorderRadius = 5;
+            this.Btn7.BorderRadius = 34;
             this.Btn7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -342,7 +342,7 @@
             this.Btn8.Animated = true;
             this.Btn8.AutoRoundedCorners = true;
             this.Btn8.BorderColor = System.Drawing.Color.White;
-            this.Btn8.BorderRadius = 5;
+            this.Btn8.BorderRadius = 34;
             this.Btn8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -362,7 +362,7 @@
             this.Btn9.Animated = true;
             this.Btn9.AutoRoundedCorners = true;
             this.Btn9.BorderColor = System.Drawing.Color.White;
-            this.Btn9.BorderRadius = 5;
+            this.Btn9.BorderRadius = 34;
             this.Btn9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -382,7 +382,7 @@
             this.Btn10.Animated = true;
             this.Btn10.AutoRoundedCorners = true;
             this.Btn10.BorderColor = System.Drawing.Color.White;
-            this.Btn10.BorderRadius = 5;
+            this.Btn10.BorderRadius = 34;
             this.Btn10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -402,7 +402,7 @@
             this.Btn11.Animated = true;
             this.Btn11.AutoRoundedCorners = true;
             this.Btn11.BorderColor = System.Drawing.Color.White;
-            this.Btn11.BorderRadius = 5;
+            this.Btn11.BorderRadius = 34;
             this.Btn11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -422,7 +422,7 @@
             this.Btn12.Animated = true;
             this.Btn12.AutoRoundedCorners = true;
             this.Btn12.BorderColor = System.Drawing.Color.White;
-            this.Btn12.BorderRadius = 5;
+            this.Btn12.BorderRadius = 34;
             this.Btn12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -437,7 +437,7 @@
             this.Btn12.Text = "12 AM";
             this.Btn12.Click += new System.EventHandler(this.Btn12_Click);
             // 
-            // DepartmentCustomControl
+            // ConfirmReservationCustomControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -463,7 +463,7 @@
             this.Controls.Add(this.PatientIDTxt);
             this.Controls.Add(this.AddNewUserBtn);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Name = "DepartmentCustomControl";
+            this.Name = "ConfirmReservationCustomControl";
             this.Size = new System.Drawing.Size(888, 524);
             this.ResumeLayout(false);
             this.PerformLayout();

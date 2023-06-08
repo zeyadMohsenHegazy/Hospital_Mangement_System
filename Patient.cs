@@ -23,7 +23,9 @@ namespace HospitalMangementSystem
         {
             string firstName = FirstNameTxt.Text;
             string lastName = LastNameTxt.Text;
-            var data = hospital.Patiens.Where(p => p.FirstName == firstName && p.LastName == lastName).FirstOrDefault();
+            string Phone = PhoneTxt.Text;
+            /*p.FirstName == firstName && p.LastName == lastName) ||*/
+            var data = hospital.Patiens.Where(p => p.phone == Phone).FirstOrDefault();
             IDTxt.Text = data.ID.ToString();
             label1.Text = data.FirstName;
             label2.Text = data.LastName;
@@ -34,6 +36,9 @@ namespace HospitalMangementSystem
             label7.Text = data.email;
         }
 
+        private void Patient_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

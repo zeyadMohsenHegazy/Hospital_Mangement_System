@@ -56,8 +56,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label15 = new System.Windows.Forms.Label();
             this.IDTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.PhoneTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -73,7 +75,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(443, 65);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(306, 90);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(117, 26);
             this.guna2HtmlLabel2.TabIndex = 6;
@@ -81,10 +83,11 @@
             // 
             // t
             // 
+            this.t.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.t.BackColor = System.Drawing.Color.Transparent;
             this.t.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.t.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.t.Location = new System.Drawing.Point(81, 65);
+            this.t.Location = new System.Drawing.Point(18, 90);
             this.t.Name = "t";
             this.t.Size = new System.Drawing.Size(118, 26);
             this.t.TabIndex = 5;
@@ -92,6 +95,7 @@
             // 
             // LastNameTxt
             // 
+            this.LastNameTxt.BorderColor = System.Drawing.Color.Gray;
             this.LastNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.LastNameTxt.DefaultText = "";
             this.LastNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -99,19 +103,21 @@
             this.LastNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.LastNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.LastNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LastNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNameTxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNameTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.LastNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LastNameTxt.Location = new System.Drawing.Point(567, 65);
+            this.LastNameTxt.Location = new System.Drawing.Point(428, 88);
             this.LastNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LastNameTxt.Name = "LastNameTxt";
             this.LastNameTxt.PasswordChar = '\0';
             this.LastNameTxt.PlaceholderText = "";
             this.LastNameTxt.SelectedText = "";
-            this.LastNameTxt.Size = new System.Drawing.Size(200, 31);
+            this.LastNameTxt.Size = new System.Drawing.Size(150, 30);
             this.LastNameTxt.TabIndex = 8;
             // 
             // FirstNameTxt
             // 
+            this.FirstNameTxt.BorderColor = System.Drawing.Color.Gray;
             this.FirstNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.FirstNameTxt.DefaultText = "";
             this.FirstNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -119,15 +125,16 @@
             this.FirstNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.FirstNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.FirstNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.FirstNameTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameTxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.FirstNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.FirstNameTxt.Location = new System.Drawing.Point(206, 65);
+            this.FirstNameTxt.Location = new System.Drawing.Point(141, 88);
             this.FirstNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FirstNameTxt.Name = "FirstNameTxt";
             this.FirstNameTxt.PasswordChar = '\0';
             this.FirstNameTxt.PlaceholderText = "";
             this.FirstNameTxt.SelectedText = "";
-            this.FirstNameTxt.Size = new System.Drawing.Size(200, 31);
+            this.FirstNameTxt.Size = new System.Drawing.Size(150, 30);
             this.FirstNameTxt.TabIndex = 7;
             // 
             // guna2HtmlLabel1
@@ -135,7 +142,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(377, 24);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(383, 32);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(96, 31);
             this.guna2HtmlLabel1.TabIndex = 9;
@@ -154,7 +161,7 @@
             this.AddNewUserBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.AddNewUserBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.AddNewUserBtn.ForeColor = System.Drawing.Color.White;
-            this.AddNewUserBtn.Location = new System.Drawing.Point(335, 418);
+            this.AddNewUserBtn.Location = new System.Drawing.Point(341, 445);
             this.AddNewUserBtn.Name = "AddNewUserBtn";
             this.AddNewUserBtn.Size = new System.Drawing.Size(180, 45);
             this.AddNewUserBtn.TabIndex = 10;
@@ -163,10 +170,11 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.LightGray;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.guna2Panel1.BorderRadius = 5;
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Location = new System.Drawing.Point(266, 122);
+            this.guna2Panel1.Location = new System.Drawing.Point(285, 149);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(130, 130);
             this.guna2Panel1.TabIndex = 11;
@@ -195,10 +203,11 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.LightGray;
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.guna2Panel2.BorderRadius = 5;
             this.guna2Panel2.Controls.Add(this.label13);
             this.guna2Panel2.Controls.Add(this.label6);
-            this.guna2Panel2.Location = new System.Drawing.Point(451, 273);
+            this.guna2Panel2.Location = new System.Drawing.Point(470, 300);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(130, 130);
             this.guna2Panel2.TabIndex = 12;
@@ -208,7 +217,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label13.Location = new System.Drawing.Point(25, 39);
+            this.label13.Location = new System.Drawing.Point(25, 31);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(74, 25);
             this.label13.TabIndex = 20;
@@ -219,7 +228,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(15, 69);
+            this.label6.Location = new System.Drawing.Point(15, 67);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(20, 25);
             this.label6.TabIndex = 19;
@@ -227,10 +236,11 @@
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.LightGray;
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.guna2Panel3.BorderRadius = 5;
             this.guna2Panel3.Controls.Add(this.label14);
             this.guna2Panel3.Controls.Add(this.label7);
-            this.guna2Panel3.Location = new System.Drawing.Point(636, 273);
+            this.guna2Panel3.Location = new System.Drawing.Point(655, 300);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(130, 130);
             this.guna2Panel3.TabIndex = 12;
@@ -240,7 +250,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label14.Location = new System.Drawing.Point(34, 39);
+            this.label14.Location = new System.Drawing.Point(34, 31);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(64, 25);
             this.label14.TabIndex = 21;
@@ -249,20 +259,21 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(9, 69);
+            this.label7.Location = new System.Drawing.Point(3, 75);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(20, 25);
+            this.label7.Size = new System.Drawing.Size(14, 17);
             this.label7.TabIndex = 20;
             this.label7.Text = "?";
             // 
             // guna2Panel4
             // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.LightGray;
+            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.guna2Panel4.BorderRadius = 5;
             this.guna2Panel4.Controls.Add(this.label9);
             this.guna2Panel4.Controls.Add(this.label2);
-            this.guna2Panel4.Location = new System.Drawing.Point(451, 122);
+            this.guna2Panel4.Location = new System.Drawing.Point(470, 149);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(130, 130);
             this.guna2Panel4.TabIndex = 12;
@@ -291,10 +302,11 @@
             // 
             // guna2Panel5
             // 
-            this.guna2Panel5.BackColor = System.Drawing.Color.LightGray;
+            this.guna2Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.guna2Panel5.BorderRadius = 5;
             this.guna2Panel5.Controls.Add(this.label10);
             this.guna2Panel5.Controls.Add(this.label3);
-            this.guna2Panel5.Location = new System.Drawing.Point(636, 122);
+            this.guna2Panel5.Location = new System.Drawing.Point(655, 149);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(130, 130);
             this.guna2Panel5.TabIndex = 12;
@@ -323,10 +335,11 @@
             // 
             // guna2Panel6
             // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.LightGray;
+            this.guna2Panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.guna2Panel6.BorderRadius = 5;
             this.guna2Panel6.Controls.Add(this.label11);
             this.guna2Panel6.Controls.Add(this.label4);
-            this.guna2Panel6.Location = new System.Drawing.Point(81, 273);
+            this.guna2Panel6.Location = new System.Drawing.Point(100, 300);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(130, 130);
             this.guna2Panel6.TabIndex = 12;
@@ -336,7 +349,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(22, 37);
+            this.label11.Location = new System.Drawing.Point(22, 31);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(84, 25);
             this.label11.TabIndex = 18;
@@ -347,7 +360,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(36, 72);
+            this.label4.Location = new System.Drawing.Point(36, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 25);
             this.label4.TabIndex = 17;
@@ -355,10 +368,11 @@
             // 
             // guna2Panel7
             // 
-            this.guna2Panel7.BackColor = System.Drawing.Color.LightGray;
+            this.guna2Panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.guna2Panel7.BorderRadius = 5;
             this.guna2Panel7.Controls.Add(this.label12);
             this.guna2Panel7.Controls.Add(this.label5);
-            this.guna2Panel7.Location = new System.Drawing.Point(266, 273);
+            this.guna2Panel7.Location = new System.Drawing.Point(285, 300);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(130, 130);
             this.guna2Panel7.TabIndex = 13;
@@ -368,7 +382,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label12.Location = new System.Drawing.Point(7, 39);
+            this.label12.Location = new System.Drawing.Point(7, 31);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(117, 25);
             this.label12.TabIndex = 19;
@@ -379,7 +393,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(55, 69);
+            this.label5.Location = new System.Drawing.Point(55, 67);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 25);
             this.label5.TabIndex = 18;
@@ -387,13 +401,41 @@
             // 
             // guna2Panel8
             // 
-            this.guna2Panel8.BackColor = System.Drawing.Color.LightGray;
+            this.guna2Panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.guna2Panel8.BorderRadius = 5;
             this.guna2Panel8.Controls.Add(this.IDTxt);
             this.guna2Panel8.Controls.Add(this.label15);
-            this.guna2Panel8.Location = new System.Drawing.Point(81, 122);
+            this.guna2Panel8.Location = new System.Drawing.Point(100, 149);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(130, 130);
             this.guna2Panel8.TabIndex = 16;
+            // 
+            // IDTxt
+            // 
+            this.IDTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.IDTxt.BorderColor = System.Drawing.Color.Gainsboro;
+            this.IDTxt.BorderRadius = 3;
+            this.IDTxt.BorderThickness = 2;
+            this.IDTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.IDTxt.DefaultText = "";
+            this.IDTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.IDTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.IDTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.IDTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.IDTxt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.IDTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.IDTxt.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.IDTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.IDTxt.Location = new System.Drawing.Point(19, 72);
+            this.IDTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.IDTxt.Name = "IDTxt";
+            this.IDTxt.PasswordChar = '\0';
+            this.IDTxt.PlaceholderText = "";
+            this.IDTxt.SelectedText = "";
+            this.IDTxt.Size = new System.Drawing.Size(94, 31);
+            this.IDTxt.TabIndex = 17;
+            this.IDTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label15
             // 
@@ -406,32 +448,47 @@
             this.label15.TabIndex = 15;
             this.label15.Text = "ID:";
             // 
-            // IDTxt
+            // PhoneTxt
             // 
-            this.IDTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.IDTxt.DefaultText = "";
-            this.IDTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.IDTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.IDTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.IDTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.IDTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.IDTxt.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IDTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.IDTxt.Location = new System.Drawing.Point(19, 72);
-            this.IDTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.IDTxt.Name = "IDTxt";
-            this.IDTxt.PasswordChar = '\0';
-            this.IDTxt.PlaceholderText = "";
-            this.IDTxt.SelectedText = "";
-            this.IDTxt.Size = new System.Drawing.Size(94, 31);
-            this.IDTxt.TabIndex = 17;
-            this.IDTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PhoneTxt.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.PhoneTxt.BorderColor = System.Drawing.Color.Gray;
+            this.PhoneTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneTxt.DefaultText = "";
+            this.PhoneTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PhoneTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PhoneTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PhoneTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PhoneTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PhoneTxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PhoneTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PhoneTxt.Location = new System.Drawing.Point(673, 88);
+            this.PhoneTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PhoneTxt.Name = "PhoneTxt";
+            this.PhoneTxt.PasswordChar = '\0';
+            this.PhoneTxt.PlaceholderText = "";
+            this.PhoneTxt.SelectedText = "";
+            this.PhoneTxt.Size = new System.Drawing.Size(150, 30);
+            this.PhoneTxt.TabIndex = 17;
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(593, 90);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(75, 26);
+            this.guna2HtmlLabel3.TabIndex = 18;
+            this.guna2HtmlLabel3.Text = "Phone:";
             // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.guna2HtmlLabel3);
+            this.Controls.Add(this.PhoneTxt);
             this.Controls.Add(this.guna2Panel8);
             this.Controls.Add(this.guna2Panel7);
             this.Controls.Add(this.guna2Panel2);
@@ -447,7 +504,8 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.t);
             this.Name = "Patient";
-            this.Size = new System.Drawing.Size(847, 482);
+            this.Size = new System.Drawing.Size(888, 524);
+            this.Load += new System.EventHandler(this.Patient_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -500,5 +558,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2TextBox IDTxt;
         private System.Windows.Forms.Label label15;
+        private Guna.UI2.WinForms.Guna2TextBox PhoneTxt;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
     }
 }
