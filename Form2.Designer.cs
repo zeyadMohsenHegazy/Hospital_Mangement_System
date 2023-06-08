@@ -31,14 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ReportsImg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ReportsBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.DashboardImg = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.SettingsImg = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelMovable = new Guna.UI2.WinForms.Guna2Panel();
             this.DashBoardBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -48,12 +41,10 @@
             this.DoctorBtn = new Guna.UI2.WinForms.Guna2Button();
             this.PatientBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.UserNameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.TopRightPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.TimeNow = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -67,12 +58,27 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.elipseinPanelMovable = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.reports_Charts1 = new HospitalMangementSystem.Reports_ChartsCustomControl();
-            this.departmentCustomControl1 = new HospitalMangementSystem.DepartmentCustomControl();
+            this.departmentCustomControl1 = new HospitalMangementSystem.ConfirmReservationCustomControl();
             this.doctorCustomConrol1 = new HospitalMangementSystem.DoctorCustomConrol();
             this.PatientCustomControl = new HospitalMangementSystem.Patient();
             this.reservationsCustomControl1 = new HospitalMangementSystem.ReservationsCustomControl();
             this.SettingsTapCustomControl = new HospitalMangementSystem.SettingsTap();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ReportsImg = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DashboardImg = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.SettingsImg = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.dashBoard1 = new HospitalMangementSystem.DashBoard();
             this.panel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            this.TopRightPanel.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.MainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReportsImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsImg)).BeginInit();
@@ -81,11 +87,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            this.TopRightPanel.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.MainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -116,18 +117,6 @@
             this.panel1.Size = new System.Drawing.Size(266, 644);
             this.panel1.TabIndex = 0;
             // 
-            // ReportsImg
-            // 
-            this.ReportsImg.BackColor = System.Drawing.Color.Teal;
-            this.ReportsImg.Image = global::HospitalMangementSystem.Properties.Resources._3d_report;
-            this.ReportsImg.ImageRotate = 0F;
-            this.ReportsImg.Location = new System.Drawing.Point(34, 530);
-            this.ReportsImg.Name = "ReportsImg";
-            this.ReportsImg.Size = new System.Drawing.Size(41, 38);
-            this.ReportsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ReportsImg.TabIndex = 18;
-            this.ReportsImg.TabStop = false;
-            // 
             // ReportsBtn
             // 
             this.ReportsBtn.Animated = true;
@@ -145,78 +134,6 @@
             this.ReportsBtn.TabIndex = 17;
             this.ReportsBtn.Text = "   Reports";
             this.ReportsBtn.Click += new System.EventHandler(this.ReportsBtn_Click);
-            // 
-            // DashboardImg
-            // 
-            this.DashboardImg.BackColor = System.Drawing.Color.Teal;
-            this.DashboardImg.Image = global::HospitalMangementSystem.Properties.Resources.dashboard;
-            this.DashboardImg.ImageRotate = 0F;
-            this.DashboardImg.Location = new System.Drawing.Point(34, 422);
-            this.DashboardImg.Name = "DashboardImg";
-            this.DashboardImg.Size = new System.Drawing.Size(36, 34);
-            this.DashboardImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.DashboardImg.TabIndex = 16;
-            this.DashboardImg.TabStop = false;
-            // 
-            // SettingsImg
-            // 
-            this.SettingsImg.BackColor = System.Drawing.Color.Teal;
-            this.SettingsImg.Image = global::HospitalMangementSystem.Properties.Resources.settings;
-            this.SettingsImg.ImageRotate = 0F;
-            this.SettingsImg.Location = new System.Drawing.Point(34, 475);
-            this.SettingsImg.Name = "SettingsImg";
-            this.SettingsImg.Size = new System.Drawing.Size(41, 38);
-            this.SettingsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SettingsImg.TabIndex = 15;
-            this.SettingsImg.TabStop = false;
-            // 
-            // guna2PictureBox6
-            // 
-            this.guna2PictureBox6.BackColor = System.Drawing.Color.Teal;
-            this.guna2PictureBox6.Image = global::HospitalMangementSystem.Properties.Resources.enterprise;
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(34, 309);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(43, 39);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox6.TabIndex = 14;
-            this.guna2PictureBox6.TabStop = false;
-            // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.BackColor = System.Drawing.Color.Teal;
-            this.guna2PictureBox5.Image = global::HospitalMangementSystem.Properties.Resources.patient;
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(34, 365);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(39, 38);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox5.TabIndex = 13;
-            this.guna2PictureBox5.TabStop = false;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.BackColor = System.Drawing.Color.Teal;
-            this.guna2PictureBox4.Image = global::HospitalMangementSystem.Properties.Resources.doctor;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(34, 251);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(40, 42);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox4.TabIndex = 12;
-            this.guna2PictureBox4.TabStop = false;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Teal;
-            this.guna2PictureBox3.Image = global::HospitalMangementSystem.Properties.Resources.reserve;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(34, 195);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(43, 42);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 7;
-            this.guna2PictureBox3.TabStop = false;
             // 
             // guna2HtmlLabel4
             // 
@@ -310,7 +227,7 @@
             this.DepartmentBtn.Name = "DepartmentBtn";
             this.DepartmentBtn.Size = new System.Drawing.Size(244, 54);
             this.DepartmentBtn.TabIndex = 6;
-            this.DepartmentBtn.Text = "   Department";
+            this.DepartmentBtn.Text = "    Confirm Resrv.";
             this.DepartmentBtn.Click += new System.EventHandler(this.DepartmentBtn_Click);
             // 
             // DoctorBtn
@@ -325,7 +242,7 @@
             this.DoctorBtn.FillColor = System.Drawing.Color.Teal;
             this.DoctorBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorBtn.ForeColor = System.Drawing.Color.White;
-            this.DoctorBtn.Location = new System.Drawing.Point(22, 244);
+            this.DoctorBtn.Location = new System.Drawing.Point(22, 356);
             this.DoctorBtn.Name = "DoctorBtn";
             this.DoctorBtn.Size = new System.Drawing.Size(244, 54);
             this.DoctorBtn.TabIndex = 5;
@@ -343,7 +260,7 @@
             this.PatientBtn.FillColor = System.Drawing.Color.Teal;
             this.PatientBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientBtn.ForeColor = System.Drawing.Color.White;
-            this.PatientBtn.Location = new System.Drawing.Point(22, 356);
+            this.PatientBtn.Location = new System.Drawing.Point(22, 244);
             this.PatientBtn.Name = "PatientBtn";
             this.PatientBtn.Size = new System.Drawing.Size(244, 54);
             this.PatientBtn.TabIndex = 4;
@@ -360,17 +277,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(155, 23);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Hospital Mangment";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::HospitalMangementSystem.Properties.Resources.LOGO;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(64, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(132, 134);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2Panel1
             // 
@@ -423,17 +329,6 @@
             this.linkLabel1.Text = "Log Out";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Teal;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::HospitalMangementSystem.Properties.Resources.man;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(620, 43);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(44, 44);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 3;
-            this.guna2PictureBox2.TabStop = false;
             // 
             // TopRightPanel
             // 
@@ -520,6 +415,7 @@
             // 
             // MainPanel
             // 
+            this.MainPanel.Controls.Add(this.dashBoard1);
             this.MainPanel.Controls.Add(this.reports_Charts1);
             this.MainPanel.Controls.Add(this.departmentCustomControl1);
             this.MainPanel.Controls.Add(this.doctorCustomConrol1);
@@ -603,6 +499,122 @@
             this.SettingsTapCustomControl.TabIndex = 0;
             this.SettingsTapCustomControl.Visible = false;
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::HospitalMangementSystem.Properties.Resources.man;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(620, 43);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(44, 44);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 3;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // ReportsImg
+            // 
+            this.ReportsImg.BackColor = System.Drawing.Color.Teal;
+            this.ReportsImg.Image = global::HospitalMangementSystem.Properties.Resources._3d_report;
+            this.ReportsImg.ImageRotate = 0F;
+            this.ReportsImg.Location = new System.Drawing.Point(33, 530);
+            this.ReportsImg.Name = "ReportsImg";
+            this.ReportsImg.Size = new System.Drawing.Size(41, 38);
+            this.ReportsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ReportsImg.TabIndex = 18;
+            this.ReportsImg.TabStop = false;
+            this.ReportsImg.Click += new System.EventHandler(this.ReportsImg_Click);
+            // 
+            // DashboardImg
+            // 
+            this.DashboardImg.BackColor = System.Drawing.Color.Teal;
+            this.DashboardImg.Image = global::HospitalMangementSystem.Properties.Resources.dashboard;
+            this.DashboardImg.ImageRotate = 0F;
+            this.DashboardImg.Location = new System.Drawing.Point(35, 422);
+            this.DashboardImg.Name = "DashboardImg";
+            this.DashboardImg.Size = new System.Drawing.Size(36, 34);
+            this.DashboardImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DashboardImg.TabIndex = 16;
+            this.DashboardImg.TabStop = false;
+            // 
+            // SettingsImg
+            // 
+            this.SettingsImg.BackColor = System.Drawing.Color.Teal;
+            this.SettingsImg.Image = global::HospitalMangementSystem.Properties.Resources.settings;
+            this.SettingsImg.ImageRotate = 0F;
+            this.SettingsImg.Location = new System.Drawing.Point(33, 475);
+            this.SettingsImg.Name = "SettingsImg";
+            this.SettingsImg.Size = new System.Drawing.Size(41, 38);
+            this.SettingsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SettingsImg.TabIndex = 15;
+            this.SettingsImg.TabStop = false;
+            this.SettingsImg.Click += new System.EventHandler(this.SettingsImg_Click);
+            // 
+            // guna2PictureBox6
+            // 
+            this.guna2PictureBox6.BackColor = System.Drawing.Color.Teal;
+            this.guna2PictureBox6.Image = global::HospitalMangementSystem.Properties.Resources.approved;
+            this.guna2PictureBox6.ImageRotate = 0F;
+            this.guna2PictureBox6.Location = new System.Drawing.Point(32, 309);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.Size = new System.Drawing.Size(43, 39);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox6.TabIndex = 14;
+            this.guna2PictureBox6.TabStop = false;
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.BackColor = System.Drawing.Color.Teal;
+            this.guna2PictureBox5.Image = global::HospitalMangementSystem.Properties.Resources.patient;
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(34, 252);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(39, 38);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox5.TabIndex = 13;
+            this.guna2PictureBox5.TabStop = false;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.BackColor = System.Drawing.Color.Teal;
+            this.guna2PictureBox4.Image = global::HospitalMangementSystem.Properties.Resources.doctor;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(33, 360);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(40, 42);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 12;
+            this.guna2PictureBox4.TabStop = false;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Teal;
+            this.guna2PictureBox3.Image = global::HospitalMangementSystem.Properties.Resources.reserve;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(32, 195);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(43, 42);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 7;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::HospitalMangementSystem.Properties.Resources.LOGO;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(64, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(132, 134);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // dashBoard1
+            // 
+            this.dashBoard1.BackColor = System.Drawing.Color.White;
+            this.dashBoard1.Location = new System.Drawing.Point(0, 3);
+            this.dashBoard1.Name = "dashBoard1";
+            this.dashBoard1.Size = new System.Drawing.Size(888, 524);
+            this.dashBoard1.TabIndex = 6;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -620,6 +632,14 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            this.TopRightPanel.ResumeLayout(false);
+            this.TopRightPanel.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
+            this.MainPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReportsImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DashboardImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsImg)).EndInit();
@@ -628,14 +648,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            this.TopRightPanel.ResumeLayout(false);
-            this.TopRightPanel.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
-            this.MainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -682,7 +694,8 @@
         private Guna.UI2.WinForms.Guna2PictureBox ReportsImg;
         private Patient PatientCustomControl;
         private DoctorCustomConrol doctorCustomConrol1;
-        private DepartmentCustomControl departmentCustomControl1;
+        private ConfirmReservationCustomControl departmentCustomControl1;
         private Reports_ChartsCustomControl reports_Charts1;
+        private DashBoard dashBoard1;
     }
 }

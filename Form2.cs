@@ -155,5 +155,17 @@ namespace HospitalMangementSystem
             ReservationsCustomControl reservations = new ReservationsCustomControl();
             reservations._SystemUserName = UserNameLabel.Text;
         }
+
+        private void ReportsImg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SettingsImg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

@@ -24,6 +24,7 @@ namespace HospitalMangementSystem
             string firstName = FirstNameTxt.Text;
             string lastName = LastNameTxt.Text;
             var data = hospital.Patiens.Where(p => p.FirstName == firstName && p.LastName == lastName).FirstOrDefault();
+            IDTxt.Text = data.ID.ToString();
             label1.Text = data.FirstName;
             label2.Text = data.LastName;
             label3.Text = data.Age.ToString();

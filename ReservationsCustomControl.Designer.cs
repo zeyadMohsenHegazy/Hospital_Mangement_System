@@ -174,12 +174,12 @@
             this.MakeResrvationTXT.BackColor = System.Drawing.Color.Transparent;
             this.MakeResrvationTXT.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MakeResrvationTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.MakeResrvationTXT.Location = new System.Drawing.Point(338, 22);
+            this.MakeResrvationTXT.Location = new System.Drawing.Point(267, 18);
             this.MakeResrvationTXT.Name = "MakeResrvationTXT";
-            this.MakeResrvationTXT.Size = new System.Drawing.Size(193, 31);
+            this.MakeResrvationTXT.Size = new System.Drawing.Size(345, 31);
             this.MakeResrvationTXT.TabIndex = 10;
             this.MakeResrvationTXT.TabStop = false;
-            this.MakeResrvationTXT.Text = "Make Resrvation";
+            this.MakeResrvationTXT.Text = "Make Resrvation(New Patient)";
             // 
             // guna2HtmlLabel1
             // 
@@ -453,9 +453,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HospitalMangementSystem.Properties.Resources.reservation;
-            this.pictureBox1.Location = new System.Drawing.Point(537, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(609, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 55);
+            this.pictureBox1.Size = new System.Drawing.Size(59, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;

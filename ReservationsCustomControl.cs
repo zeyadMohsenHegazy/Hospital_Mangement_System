@@ -192,9 +192,5 @@ namespace HospitalMangementSystem
             }
         }
 
-        //var MachingUser = from User in hospital.Users
-        //                  where User.UserName == _SystemUserName
-        //                  select User;
-        //int _UserID = MachingUser.FirstOrDefault().ID;
     }
 }
