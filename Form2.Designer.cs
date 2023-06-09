@@ -128,7 +128,6 @@
             this.ReportsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ReportsImg.TabIndex = 18;
             this.ReportsImg.TabStop = false;
-            this.ReportsImg.Click += new System.EventHandler(this.ReportsImg_Click);
             // 
             // ReportsBtn
             // 
@@ -171,7 +170,6 @@
             this.SettingsImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SettingsImg.TabIndex = 15;
             this.SettingsImg.TabStop = false;
-            this.SettingsImg.Click += new System.EventHandler(this.SettingsImg_Click);
             // 
             // guna2PictureBox6
             // 

@@ -43,9 +43,10 @@ namespace HospitalMangementSystem
                 //reservations._SystemUserName = UserNameTxt.Text;
                 #endregion
 
-                mainform.Show();
+                mainform.ShowDialog();
                 UserNameTxt.Text = String.Empty;
                 PasswordTxt.Text = String.Empty;
+
             }
             else
             {

@@ -24,7 +24,6 @@ namespace HospitalMangementSystem
         {
             PanelMovable.Top = Btn.Top;
             PanelMovable.Height = Btn.Height;
-
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -161,15 +160,7 @@ namespace HospitalMangementSystem
             reservations._SystemUserName = UserNameLabel.Text;
         }
 
-        private void ReportsImg_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void SettingsImg_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
     }

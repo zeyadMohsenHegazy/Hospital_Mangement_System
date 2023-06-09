@@ -40,6 +40,7 @@
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.NumOfPatients = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.AddNewUserBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -52,7 +53,7 @@
             this.guna2Panel1.Controls.Add(this.NumOfAdmins);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.FillColor = System.Drawing.Color.Teal;
-            this.guna2Panel1.Location = new System.Drawing.Point(53, 132);
+            this.guna2Panel1.Location = new System.Drawing.Point(53, 96);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(180, 180);
             this.guna2Panel1.TabIndex = 0;
@@ -89,7 +90,7 @@
             this.guna2Panel2.Controls.Add(this.NumOfDoctors);
             this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.FillColor = System.Drawing.Color.Teal;
-            this.guna2Panel2.Location = new System.Drawing.Point(455, 132);
+            this.guna2Panel2.Location = new System.Drawing.Point(455, 96);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(180, 180);
             this.guna2Panel2.TabIndex = 1;
@@ -126,7 +127,7 @@
             this.guna2Panel3.Controls.Add(this.NumOfUsers);
             this.guna2Panel3.Controls.Add(this.label2);
             this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2Panel3.Location = new System.Drawing.Point(255, 221);
+            this.guna2Panel3.Location = new System.Drawing.Point(255, 185);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(180, 180);
             this.guna2Panel3.TabIndex = 2;
@@ -163,7 +164,7 @@
             this.guna2Panel4.Controls.Add(this.NumOfPatients);
             this.guna2Panel4.Controls.Add(this.label4);
             this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(658, 221);
+            this.guna2Panel4.Location = new System.Drawing.Point(658, 185);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(180, 180);
             this.guna2Panel4.TabIndex = 2;
@@ -194,18 +195,38 @@
             this.label4.Text = "Number Of  \r\nPatiens:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // AddNewUserBtn
+            // 
+            this.AddNewUserBtn.Animated = true;
+            this.AddNewUserBtn.AutoRoundedCorners = true;
+            this.AddNewUserBtn.BorderColor = System.Drawing.Color.White;
+            this.AddNewUserBtn.BorderRadius = 5;
+            this.AddNewUserBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AddNewUserBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AddNewUserBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AddNewUserBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AddNewUserBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.AddNewUserBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.AddNewUserBtn.ForeColor = System.Drawing.Color.White;
+            this.AddNewUserBtn.Location = new System.Drawing.Point(347, 441);
+            this.AddNewUserBtn.Name = "AddNewUserBtn";
+            this.AddNewUserBtn.Size = new System.Drawing.Size(180, 45);
+            this.AddNewUserBtn.TabIndex = 12;
+            this.AddNewUserBtn.Text = "Load Data";
+            this.AddNewUserBtn.Click += new System.EventHandler(this.AddNewUserBtn_Click);
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.AddNewUserBtn);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "DashBoard";
             this.Size = new System.Drawing.Size(888, 524);
-            this.Load += new System.EventHandler(this.DashBoard_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -232,5 +253,6 @@
         private System.Windows.Forms.Label NumOfUsers;
         private System.Windows.Forms.Label NumOfPatients;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2Button AddNewUserBtn;
     }
 }

@@ -19,7 +19,9 @@ namespace HospitalMangementSystem
             hospital = new HospitalEntities();
         }
 
-        private void DashBoard_Load(object sender, EventArgs e)
+
+
+        public void LoadData()
         {
             int Doctors = hospital.Doctors.Count();
             NumOfDoctors.Text = Doctors.ToString();
@@ -32,8 +34,13 @@ namespace HospitalMangementSystem
 
             int ReceptianistUsers = hospital.Users.Count(z => z.role == "receptionist");
             NumOfUsers.Text = ReceptianistUsers.ToString();
+        }
 
 
+
+        private void AddNewUserBtn_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }
