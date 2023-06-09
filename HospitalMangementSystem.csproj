@@ -199,6 +199,13 @@
     <Compile Include="SettingsTap.Designer.cs">
       <DependentUpon>SettingsTap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Test1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test1.Designer.cs">
+      <DependentUpon>Test1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestDashBoardProp.cs" />
     <Compile Include="TodayRoport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -257,6 +264,9 @@
     <EmbeddedResource Include="DoctorCustomControl.resx">
       <DependentUpon>DoctorCustomControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Test1.resx">
+      <DependentUpon>Test1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TodayRoport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TodayRoport.cs</LastGenOutput>
@@ -293,6 +303,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\191994001.jpg" />
+    <None Include="Resources\19199400.jpg" />
     <None Include="Resources\approved.png" />
     <None Include="Resources\3d-report.png" />
     <None Include="Resources\statistics.png" />

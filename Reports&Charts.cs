@@ -16,10 +16,11 @@ namespace HospitalMangementSystem
     public partial class Reports_ChartsCustomControl : UserControl
     {
         HospitalEntities hospital;
+
         public Reports_ChartsCustomControl()
         {
             InitializeComponent();
-            hospital = new HospitalEntities();
+            hospital = new HospitalEntities(); 
         }
 
         private void GenerateReport_Click(object sender, EventArgs e)
@@ -32,6 +33,12 @@ namespace HospitalMangementSystem
         {
             ChartsForm chartsForm = new ChartsForm();
             chartsForm.Show();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Test1 test1 = new Test1();
+            test1.ShowDialog();
         }
     }
 }

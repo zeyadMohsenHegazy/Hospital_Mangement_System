@@ -33,6 +33,10 @@ namespace HospitalMangementSystem
             label3.Text = docs.Salary.ToString();
             label4.Text = docs.Specialization;
 
+            TestDashBoardProp.DoctorFirstName = docs.FirstName;
+            TestDashBoardProp.DoctorLastName = docs.LastName;
+            TestDashBoardProp.DoctorSalary = docs.Salary;
+
         }
 
         private void DoctorFullNameTxt_KeyPress(object sender, KeyPressEventArgs e)

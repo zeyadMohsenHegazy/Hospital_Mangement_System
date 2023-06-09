@@ -94,6 +94,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(180, 149);
             this.guna2Button3.TabIndex = 18;
             this.guna2Button3.Text = "Testing";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // Reports_ChartsCustomControl
             // 
