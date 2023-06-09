@@ -171,7 +171,6 @@
             // ShowPasswordTxt
             // 
             this.ShowPasswordTxt.BackColor = System.Drawing.Color.Transparent;
-            this.ShowPasswordTxt.Checked = true;
             this.ShowPasswordTxt.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ShowPasswordTxt.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ShowPasswordTxt.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));

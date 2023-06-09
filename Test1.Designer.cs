@@ -39,6 +39,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TestConfResr = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.TestPatientsCC = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(616, 12);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(649, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(28, 24);
             this.guna2ControlBox1.TabIndex = 21;
@@ -73,9 +74,9 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(22, 138);
+            this.guna2Button3.Location = new System.Drawing.Point(23, 146);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(180, 149);
+            this.guna2Button3.Size = new System.Drawing.Size(155, 151);
             this.guna2Button3.TabIndex = 23;
             this.guna2Button3.Text = "Test DashBoard";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -90,9 +91,9 @@
             this.TestDoctor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.TestDoctor.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TestDoctor.ForeColor = System.Drawing.Color.White;
-            this.TestDoctor.Location = new System.Drawing.Point(238, 138);
+            this.TestDoctor.Location = new System.Drawing.Point(185, 146);
             this.TestDoctor.Name = "TestDoctor";
-            this.TestDoctor.Size = new System.Drawing.Size(180, 149);
+            this.TestDoctor.Size = new System.Drawing.Size(155, 151);
             this.TestDoctor.TabIndex = 24;
             this.TestDoctor.Text = "Test Doctors CC";
             this.TestDoctor.Click += new System.EventHandler(this.TestDoctor_Click);
@@ -131,9 +132,9 @@
             this.TestConfResr.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.TestConfResr.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TestConfResr.ForeColor = System.Drawing.Color.White;
-            this.TestConfResr.Location = new System.Drawing.Point(454, 138);
+            this.TestConfResr.Location = new System.Drawing.Point(347, 146);
             this.TestConfResr.Name = "TestConfResr";
-            this.TestConfResr.Size = new System.Drawing.Size(180, 149);
+            this.TestConfResr.Size = new System.Drawing.Size(155, 151);
             this.TestConfResr.TabIndex = 27;
             this.TestConfResr.Text = "Test Confirm Reservation";
             this.TestConfResr.Click += new System.EventHandler(this.TestConfResr_Click);
@@ -144,14 +145,32 @@
             this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guna2ShadowForm1.TargetForm = this;
             // 
+            // TestPatientsCC
+            // 
+            this.TestPatientsCC.BorderRadius = 5;
+            this.TestPatientsCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.TestPatientsCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.TestPatientsCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.TestPatientsCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.TestPatientsCC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.TestPatientsCC.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestPatientsCC.ForeColor = System.Drawing.Color.White;
+            this.TestPatientsCC.Location = new System.Drawing.Point(509, 146);
+            this.TestPatientsCC.Name = "TestPatientsCC";
+            this.TestPatientsCC.Size = new System.Drawing.Size(155, 151);
+            this.TestPatientsCC.TabIndex = 28;
+            this.TestPatientsCC.Text = "Test Patients CC";
+            this.TestPatientsCC.Click += new System.EventHandler(this.TestPatientsCC_Click);
+            // 
             // Test1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(656, 351);
+            this.ClientSize = new System.Drawing.Size(689, 344);
             this.ControlBox = false;
+            this.Controls.Add(this.TestPatientsCC);
             this.Controls.Add(this.TestConfResr);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.TestDoctor);
@@ -179,5 +198,6 @@
         private Guna.UI2.WinForms.Guna2Button TestConfResr;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
+        private Guna.UI2.WinForms.Guna2Button TestPatientsCC;
     }
 }

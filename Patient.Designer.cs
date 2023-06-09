@@ -113,7 +113,7 @@
             this.LastNameTxt.PlaceholderText = "";
             this.LastNameTxt.SelectedText = "";
             this.LastNameTxt.Size = new System.Drawing.Size(150, 30);
-            this.LastNameTxt.TabIndex = 8;
+            this.LastNameTxt.TabIndex = 2;
             // 
             // FirstNameTxt
             // 
@@ -135,7 +135,8 @@
             this.FirstNameTxt.PlaceholderText = "";
             this.FirstNameTxt.SelectedText = "";
             this.FirstNameTxt.Size = new System.Drawing.Size(150, 30);
-            this.FirstNameTxt.TabIndex = 7;
+            this.FirstNameTxt.TabIndex = 1;
+            this.FirstNameTxt.TextChanged += new System.EventHandler(this.FirstNameTxt_TextChanged);
             // 
             // guna2HtmlLabel1
             // 
@@ -228,7 +229,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(15, 67);
+            this.label6.Location = new System.Drawing.Point(-1, 67);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(20, 25);
             this.label6.TabIndex = 19;
@@ -240,9 +241,9 @@
             this.guna2Panel3.BorderRadius = 5;
             this.guna2Panel3.Controls.Add(this.label14);
             this.guna2Panel3.Controls.Add(this.label7);
-            this.guna2Panel3.Location = new System.Drawing.Point(655, 300);
+            this.guna2Panel3.Location = new System.Drawing.Point(641, 300);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(130, 130);
+            this.guna2Panel3.Size = new System.Drawing.Size(147, 130);
             this.guna2Panel3.TabIndex = 12;
             // 
             // label14
@@ -259,11 +260,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(3, 75);
+            this.label7.Location = new System.Drawing.Point(1, 75);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(14, 17);
+            this.label7.Size = new System.Drawing.Size(12, 15);
             this.label7.TabIndex = 20;
             this.label7.Text = "?";
             // 
@@ -327,7 +328,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(54, 72);
+            this.label3.Location = new System.Drawing.Point(47, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(20, 25);
             this.label3.TabIndex = 16;
@@ -393,7 +394,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(55, 67);
+            this.label5.Location = new System.Drawing.Point(45, 67);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 25);
             this.label5.TabIndex = 18;
@@ -469,7 +470,7 @@
             this.PhoneTxt.PlaceholderText = "";
             this.PhoneTxt.SelectedText = "";
             this.PhoneTxt.Size = new System.Drawing.Size(150, 30);
-            this.PhoneTxt.TabIndex = 17;
+            this.PhoneTxt.TabIndex = 3;
             // 
             // guna2HtmlLabel3
             // 

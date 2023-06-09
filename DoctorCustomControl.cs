@@ -49,7 +49,7 @@ namespace HospitalMangementSystem
 
         private void DoctorFullNameTxt_TextChanged(object sender, EventArgs e)
         {
-            if (DoctorFullNameTxt.Text.Length == 0)
+            if (DoctorFullNameTxt.Text.Length == 1)
             {
                 label1.Text = "";
                 label2.Text = "";

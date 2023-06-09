@@ -15,7 +15,6 @@ namespace HospitalMangementSystem
     public partial class LoginForm : Form
     {
         Main mainform;
-        ReservationsCustomControl reservations;
         HospitalEntities hospitalEntities;
 
         public LoginForm()
@@ -23,7 +22,6 @@ namespace HospitalMangementSystem
             InitializeComponent();
             hospitalEntities = new HospitalEntities();
             mainform = new Main();
-            reservations = new ReservationsCustomControl();
         }
 
 
@@ -40,7 +38,6 @@ namespace HospitalMangementSystem
                 #region send user data through the app
                 mainform.UserNameL = UserNameTxt.Text;
                 mainform.Role = PasswordTxt.Text;
-                //reservations._SystemUserName = UserNameTxt.Text;
                 #endregion
 
                 mainform.ShowDialog();
@@ -69,16 +66,16 @@ namespace HospitalMangementSystem
         {
             if(ShowPasswordTxt.Checked)
             {
-                PasswordTxt.UseSystemPasswordChar = true;
+                PasswordTxt.UseSystemPasswordChar = false;
             }
             else
-                PasswordTxt.UseSystemPasswordChar = false;
+                PasswordTxt.UseSystemPasswordChar = true;
 
         }
 
         private void PasswordTxt_TextChanged(object sender, EventArgs e)
         {
-            if(ShowPasswordTxt.Checked)
+            if(!ShowPasswordTxt.Checked)
                 PasswordTxt.UseSystemPasswordChar = true;
         }
     }

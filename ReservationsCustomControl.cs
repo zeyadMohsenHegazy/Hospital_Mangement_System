@@ -76,7 +76,6 @@ namespace HospitalMangementSystem
             int _UserID = GetUserIdBasedInUserName();
             #endregion
 
-
             #region dealing with the data base (reservations table and patient table)
 
 
@@ -106,8 +105,8 @@ namespace HospitalMangementSystem
                 DepartmentID = DepartmentID
             });
             #endregion
+            
             hospital.SaveChanges();
-
             clearall();
         }
 

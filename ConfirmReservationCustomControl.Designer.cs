@@ -56,7 +56,7 @@
             this.AddNewUserBtn.Animated = true;
             this.AddNewUserBtn.AutoRoundedCorners = true;
             this.AddNewUserBtn.BorderColor = System.Drawing.Color.White;
-            this.AddNewUserBtn.BorderRadius = 5;
+            this.AddNewUserBtn.BorderRadius = 18;
             this.AddNewUserBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.AddNewUserBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.AddNewUserBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -115,6 +115,7 @@
             this.PatientIDTxt.SelectedText = "";
             this.PatientIDTxt.Size = new System.Drawing.Size(121, 31);
             this.PatientIDTxt.TabIndex = 22;
+            this.PatientIDTxt.TextChanged += new System.EventHandler(this.PatientIDTxt_TextChanged);
             // 
             // guna2HtmlLabel2
             // 

@@ -173,5 +173,109 @@ namespace HospitalMangementSystem
 
 
         }
+
+        //test patient Custom control
+        private void TestPatientsCC_Click(object sender, EventArgs e)
+        {
+
+            int expectedID = 1025;
+            string expectedFirstName = "josef";
+            string expectedLastName = "abdo";
+            int expectedAge = 27;
+            string expectedGender = "m";
+            string expectedBloodType = "AB ";
+            string expectedPhone = "01222606281";
+            string expectedEmail = "josephserafem@gmail.com";
+            
+            int actualPatientID = TestDashBoardProp.PatientID1;
+            string actualFirstName = TestDashBoardProp.PatientFirstName1;
+            string actualLastName = TestDashBoardProp.PatientLastName1;
+            int actualAge = TestDashBoardProp.PatientAge;
+            string actualGender = TestDashBoardProp.PatientGender;
+            string actualBloodType = TestDashBoardProp.PatientBloodType;
+            string actualPhone = TestDashBoardProp.PatientPhone;
+            string actualEmail = TestDashBoardProp.PatientEmail;
+
+            if (actualPatientID == expectedID)
+            {
+                MessageBox.Show("Test for Patient ID passed.");
+            }
+            else
+            {
+                MessageBox.Show($"Test for Patient ID failed. Expected {expectedID} , actual {actualPatientID}.");
+            }
+
+
+            if (actualFirstName == expectedFirstName)
+            {
+                MessageBox.Show("Test for Patient first name passed.");
+            }
+            else
+            {
+                MessageBox.Show($"Test for Patient First Name failed. Expected {expectedFirstName} , actual {actualFirstName}.");
+            }
+
+
+            if (actualLastName == expectedLastName)
+            {
+                MessageBox.Show("Test for Patient Last Name passed.");
+            }
+            else
+            {
+                MessageBox.Show($"Test for Patient Last Name failed. Expected {expectedLastName} , actual {actualLastName}.");
+            }
+
+
+            if (actualAge == expectedAge)
+            {
+                MessageBox.Show("Test Patient Age  passed.");
+            }
+            else
+            {
+                MessageBox.Show($"Test for Patient Age failed. Expected {expectedAge} , actual {actualAge}.");
+            }
+            ////
+
+            if (actualGender == expectedGender)
+            {
+                MessageBox.Show("Test Patient Gender  passed.");
+            }
+            else
+            {
+                MessageBox.Show($"Test for Patient Gender failed. Expected {expectedGender} , actual {actualGender}.");
+            }
+
+
+            if (actualBloodType == expectedBloodType)
+            {
+                MessageBox.Show("Test Patient Blood Type  passed.");
+            }
+            else
+            {
+                MessageBox.Show($"Test for Patient Blood Type failed. Expected {expectedBloodType} , actual {actualBloodType}.");
+            }
+
+
+            if (actualPhone == expectedPhone)
+            {
+                MessageBox.Show("Test Patient Phone  passed.");
+            }
+            else
+            {
+                MessageBox.Show($"Test for Patient Phone failed. Expected {expectedPhone} , actual {actualPhone}.");
+            }
+
+
+            if (actualEmail == expectedEmail)
+            {
+                MessageBox.Show("Test Patient Age  passed.");
+            }
+            else
+            {
+                MessageBox.Show($"Test for Patient Age failed. Expected {expectedEmail} , actual {actualEmail}.");
+            }
+
+
+        }
     }
 }

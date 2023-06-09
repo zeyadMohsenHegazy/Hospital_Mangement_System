@@ -39,7 +39,7 @@ namespace HospitalMangementSystem
                                 new ObservablePoint(7,3),
                                 new ObservablePoint(8,1),
                                 new ObservablePoint(9,5),
-                                new ObservablePoint(10,4),
+                                new ObservablePoint(10,5),
                                 new ObservablePoint(15,1),
                                 new ObservablePoint(16,1),
 

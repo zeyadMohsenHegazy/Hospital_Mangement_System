@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Markup;
 
 namespace HospitalMangementSystem
 {
@@ -34,6 +35,17 @@ namespace HospitalMangementSystem
             label6.Text = data.phone;
             label7.Text = data.email;
 
+            #region Send the data for testing 
+            TestDashBoardProp.PatientID1 = data.ID;
+            TestDashBoardProp.PatientFirstName1 = data.FirstName;
+            TestDashBoardProp.PatientLastName1 = data.LastName;
+            TestDashBoardProp.PatientAge = (int)data.Age;
+            TestDashBoardProp.PatientBloodType = data.BloodType;
+            TestDashBoardProp.PatientPhone = data.phone;
+            TestDashBoardProp.PatientGender = data.Gender;
+            TestDashBoardProp.PatientEmail = data.email;
+            #endregion
+
             Clear();
         }
 
@@ -47,6 +59,21 @@ namespace HospitalMangementSystem
             FirstNameTxt.Text = string.Empty;
             LastNameTxt.Text = string.Empty;
             PhoneTxt.Text = string.Empty;
+        }
+
+        private void FirstNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if (FirstNameTxt.Text.Length == 1)
+            {
+                IDTxt.Text = "";
+                label1.Text = "";
+                label2.Text = "";
+                label3.Text = "";
+                label4.Text = "";
+                label5.Text = "";
+                label6.Text = "";
+                label7.Text = "";
+            }
         }
     }
 }

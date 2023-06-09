@@ -204,5 +204,15 @@ namespace HospitalMangementSystem
             RestResponse response = await client.ExecuteAsync(request);
             var output = response.Content;
         }
+
+        //to reset the form
+        private void PatientIDTxt_TextChanged(object sender, EventArgs e)
+        {
+            if (PatientIDTxt.Text.Length == 1)
+            {
+                ReservationDateTxt.Text = string.Empty;
+                PatientNameTxt.Text = string.Empty;
+            }
+        }
     }
 }

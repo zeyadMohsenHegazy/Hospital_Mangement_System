@@ -26,5 +26,18 @@ namespace HospitalMangementSystem
         public static string PatientFirstName { get; set; }
         public static string PatientLastName { get; set; }
         public static DateTime ReservDate { get; set; }
+
+
+        //Patients custom control 
+        public static int PatientID1 { get; set; }
+        public static string PatientFirstName1 { get; set; }
+        public static string PatientLastName1 { get; set; }
+        public static int PatientAge { get; set; }
+        public static string PatientGender { get; set; }
+        public static string PatientBloodType { get; set; }
+        public static string PatientPhone { get; set; }
+        public static string PatientEmail { get; set; }
+
+
     }
 }
