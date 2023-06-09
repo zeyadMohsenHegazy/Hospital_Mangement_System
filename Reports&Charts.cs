@@ -30,7 +30,8 @@ namespace HospitalMangementSystem
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-
+            ChartsForm chartsForm = new ChartsForm();
+            chartsForm.Show();
         }
     }
 }
