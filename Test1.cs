@@ -22,18 +22,19 @@ namespace HospitalMangementSystem
         //test for the Dashboard Custom conrol 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            //Arange
             int expectedDoctors = 6;
             int expectedAdmins = 6;
             int expectedUsers = 5;
             int expectedPatients = 25;
 
-
+            //Act
             int actualDoctors = TestDashBoardProp.NumOfDocs;
             int actualAdmins = TestDashBoardProp.NumOfAdmins;
             int actualUsers = TestDashBoardProp.NumOfUsers;
             int actualPatients = TestDashBoardProp.NumOfPatients;
 
+            //Assert
             if (actualDoctors == expectedDoctors)
             {
                 MessageBox.Show("Test for number of doctors passed.");
@@ -97,7 +98,7 @@ namespace HospitalMangementSystem
 
             if (actualLastName == expectedLastName)
             {
-                MessageBox.Show("Test for doctor last name passed.");
+                MessageBox.Show("Test for Doctor's last name passed.");
             }
             else
             {

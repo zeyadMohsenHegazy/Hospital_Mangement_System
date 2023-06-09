@@ -28,8 +28,6 @@ namespace HospitalMangementSystem
         private void AddNewUserBtn_Click(object sender, EventArgs e)
         {
 
-            
-
             #region Confirm Rservation
             int id = int.Parse(PatientIDTxt.Text);
             var Paient = hospital.Patiens.FirstOrDefault(z => z.ID == id);
@@ -44,7 +42,8 @@ namespace HospitalMangementSystem
             //for testing the data..
             TestDashBoardProp.PatientID = Paient.ID;
             TestDashBoardProp.PatientFirstName = Paient.FirstName;
-            TestDashBoardProp.PatientFirstName = Paient.LastName;
+            TestDashBoardProp.PatientLastName = Paient.LastName;
+            TestDashBoardProp.ReservDate = Date;
             #endregion
 
         }
