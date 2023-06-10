@@ -37,38 +37,38 @@ namespace HospitalMangementSystem
             //Assert
             if (actualDoctors == expectedDoctors)
             {
-                MessageBox.Show("Test for number of doctors passed.");
+                MessageBox.Show("Test for number of doctors passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for number of doctors failed. Expected {expectedDoctors}, actual {actualDoctors}.");
+                MessageBox.Show($"Test for number of doctors failed. ✘ Expected {expectedDoctors}, actual {actualDoctors}.");
             }
 
             if (actualAdmins == expectedAdmins)
             {
-                MessageBox.Show("Test for number of admins passed.");
+                MessageBox.Show("Test for number of admins passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for number of admins failed. Expected {expectedAdmins}, actual {actualAdmins}.");
+                MessageBox.Show($"Test for number of admins failed. ✘ Expected {expectedAdmins}, actual {actualAdmins}.");
             }
 
             if (actualUsers == expectedUsers)
             {
-                MessageBox.Show("Test for number of users passed.");
+                MessageBox.Show("Test for number of users passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for number of users failed. Expected {expectedUsers}, actual {actualUsers}.");
+                MessageBox.Show($"Test for number of users failed. ✘ Expected {expectedUsers}, actual {actualUsers}.");
             }
 
             if (actualPatients == expectedPatients)
             {
-                MessageBox.Show("Test for number of patients passed.");
+                MessageBox.Show("Test for number of patients passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for number of patients failed. Expected {expectedPatients}, actual {actualPatients}.");
+                MessageBox.Show($"Test for number of patients failed. ✘ Expected {expectedPatients}, actual {actualPatients}.");
             }
         }
 
@@ -89,29 +89,29 @@ namespace HospitalMangementSystem
 
             if (actualFirstName == expectedFirstName)
             {
-                MessageBox.Show("Test for doctor first name passed.");
+                MessageBox.Show("Test for doctor first name passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for doctor's First Name failed. Expected {expectedFirstName} , actual {actualFirstName}.");
+                MessageBox.Show($"Test for doctor's First Name failed. ✘ Expected {expectedFirstName} , actual {actualFirstName}.");
             }
 
             if (actualLastName == expectedLastName)
             {
-                MessageBox.Show("Test for Doctor's last name passed.");
+                MessageBox.Show("Test for Doctor's last name passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Doctor's last name failed. Expected {expectedLastName} , actual {actualLastName}.");
+                MessageBox.Show($"Test for Doctor's last name failed. ✘ Expected {expectedLastName} , actual {actualLastName}.");
             }
 
             if (actualSalary == expectedSalary)
             {
-                MessageBox.Show("Test for Doctor's Salary passed.");
+                MessageBox.Show("Test for Doctor's Salary passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for doctor's Salary failed. Expected {expectedSalary} , actual {actualSalary}.");
+                MessageBox.Show($"Test for doctor's Salary failed. ✘ Expected {expectedSalary} , actual {actualSalary}.");
             }
 
 
@@ -121,10 +121,10 @@ namespace HospitalMangementSystem
         private void TestConfResr_Click(object sender, EventArgs e)
         {
 
-            int expectedID = 21;
-            string expectedFirstName = "kero";
-            string expectedLastName = "fayez";
-            string expectedDate = "09-06-2023";
+            int expectedID = 1025;
+            string expectedFirstName = "Josef";
+            string expectedLastName = "abdo";
+            string expectedDate = "24-06-2023";
 
 
             int actualPatientID = TestDashBoardProp.PatientID; 
@@ -134,43 +134,42 @@ namespace HospitalMangementSystem
 
             if (actualPatientID == expectedID)
             {
-                MessageBox.Show("Test for Patient ID passed.");
+                MessageBox.Show("Test for Patient ID passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient ID failed. Expected {expectedID} , actual {actualPatientID}.");
+                MessageBox.Show($"Test for Patient ID failed. ✘ Expected {expectedID} , actual {actualPatientID}.");
             }
 
 
             if (actualFirstName == expectedFirstName)
             {
-                MessageBox.Show("Test for Patient first name passed.");
+                MessageBox.Show("Test for Patient first name passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient First Name failed. Expected {expectedFirstName} , actual {actualFirstName}.");
+                MessageBox.Show($"Test for Patient First Name failed. ✘ Expected {expectedFirstName} , actual {actualFirstName}.");
             }
 
 
             if (actualLastName == expectedLastName)
             {
-                MessageBox.Show("Test for Patient Last Name passed.");
+                MessageBox.Show("Test for Patient Last Name passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient Last Name failed. Expected {expectedLastName} , actual {actualLastName}.");
+                MessageBox.Show($"Test for Patient Last Name failed. ✘ Expected {expectedLastName} , actual {actualLastName}.");
             }
 
 
             if (actualDate == expectedDate)
             {
-                MessageBox.Show("Test Patient reservation Date passed.");
+                MessageBox.Show("Test Patient reservation Date passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient Reservation Date failed. Expected {expectedDate} , actual {actualDate}.");
+                MessageBox.Show($"Test for Patient Reservation Date failed. ✘ Expected {expectedDate} , actual {actualDate}.");
             }
-
 
         }
 
@@ -198,81 +197,81 @@ namespace HospitalMangementSystem
 
             if (actualPatientID == expectedID)
             {
-                MessageBox.Show("Test for Patient ID passed.");
+                MessageBox.Show("Test for Patient ID passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient ID failed. Expected {expectedID} , actual {actualPatientID}.");
+                MessageBox.Show($"Test for Patient ID failed. ✘ Expected {expectedID} , actual {actualPatientID}.");
             }
 
 
             if (actualFirstName == expectedFirstName)
             {
-                MessageBox.Show("Test for Patient first name passed.");
+                MessageBox.Show("Test for Patient first name passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient First Name failed. Expected {expectedFirstName} , actual {actualFirstName}.");
+                MessageBox.Show($"Test for Patient First Name failed. ✘ Expected {expectedFirstName} , actual {actualFirstName}.");
             }
 
 
             if (actualLastName == expectedLastName)
             {
-                MessageBox.Show("Test for Patient Last Name passed.");
+                MessageBox.Show("Test for Patient Last Name passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient Last Name failed. Expected {expectedLastName} , actual {actualLastName}.");
+                MessageBox.Show($"Test for Patient Last Name failed. ✘ Expected {expectedLastName} , actual {actualLastName}.");
             }
 
 
             if (actualAge == expectedAge)
             {
-                MessageBox.Show("Test Patient Age  passed.");
+                MessageBox.Show("Test Patient Age  passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient Age failed. Expected {expectedAge} , actual {actualAge}.");
+                MessageBox.Show($"Test for Patient Age failed. ✘ Expected {expectedAge} , actual {actualAge}.");
             }
-            ////
+            
 
             if (actualGender == expectedGender)
             {
-                MessageBox.Show("Test Patient Gender  passed.");
+                MessageBox.Show("Test Patient Gender  passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient Gender failed. Expected {expectedGender} , actual {actualGender}.");
+                MessageBox.Show($"Test for Patient Gender failed. ✘ Expected {expectedGender} , actual {actualGender}.");
             }
 
 
             if (actualBloodType == expectedBloodType)
             {
-                MessageBox.Show("Test Patient Blood Type  passed.");
+                MessageBox.Show("Test Patient Blood Type  passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient Blood Type failed. Expected {expectedBloodType} , actual {actualBloodType}.");
+                MessageBox.Show($"Test for Patient Blood Type failed. ✘ Expected {expectedBloodType} , actual {actualBloodType}.");
             }
 
 
             if (actualPhone == expectedPhone)
             {
-                MessageBox.Show("Test Patient Phone  passed.");
+                MessageBox.Show("Test Patient Phone  passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient Phone failed. Expected {expectedPhone} , actual {actualPhone}.");
+                MessageBox.Show($"Test for Patient Phone failed. ✘ Expected {expectedPhone} , actual {actualPhone}.");
             }
 
 
             if (actualEmail == expectedEmail)
             {
-                MessageBox.Show("Test Patient Age  passed.");
+                MessageBox.Show("Test Patient Age  passed. ✔");
             }
             else
             {
-                MessageBox.Show($"Test for Patient Age failed. Expected {expectedEmail} , actual {actualEmail}.");
+                MessageBox.Show($"Test for Patient Age failed. ✘ Expected {expectedEmail} , actual {actualEmail}.");
             }
 
 
